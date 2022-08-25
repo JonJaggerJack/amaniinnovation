@@ -5,8 +5,12 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				Roboto: ["Roboto", "sans-serif"],
-				Raleway: ["Raleway", "sans-serif"]
+				reg: ["Inter, sans-serif"],
+				medium: ["Inter, sans-serif"],
+				semibold: ["Inter, sans-serif"],
+				bold: ["Inter, sans-serif"],
+				extrabold: ["Inter, sans-serif"],
+				black: ["Inter, sans-serif"]
 			}
 		},
 		colors: {
@@ -17,6 +21,7 @@ module.exports = {
 			cblack: "#023948",
 			cgray: {
 				100: "#60606013",
+				200: "#60606023",
 				300: "#60606043",
 				800: "#60606097",
 				900: "#606060"

@@ -1,3 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body,
+html {
+	@apply font-reg;
+}
+
+h1 {
+	@apply text-6xl font-black;
+}
+
+/* rules that target nested elements */
+.nested-enter-active .inner,
+.nested-leave-active .inner {
+	transition: all 0.3s ease-in-out;
+}
+
+.nested-enter-from .inner,
+.nested-leave-to .inner {
+	transform: translateX(30px);
+	opacity: 0;
+}
+
+.tooltip-top {
+	@apply content-[''] z-50 absolute -bottom-[25px]  left-1/2 -translate-x-2 border-8 border-x-transparent border-b-transparent border-t-white;
+}
+
+/* ... other necessary CSS omitted */
