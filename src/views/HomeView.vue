@@ -1,10 +1,10 @@
 <template>
   <div class="home bg-cblack bg-[url('bg/2.jpg')] bg-cover bg-center relative">
     <div class="absolute top-0 right-0 w-full h-full bg-cblack opacity-70"></div>
-    <div class="max-w-7xl py-32 mx-auto text-left md:text-center px-4 md:px-0">
+    <div class="max-w-7xl py-32 mx-auto text-left md:text-center px-4 lg:px-0">
       <div class="relative max-w-4xl">
         <h1
-          class="pb-2 mt-[500px] text-3xl font-extrabold text-left text-transparent sm:text-3xl md:text-6xl md:text-left bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
+          class="pb-2 mt-[250px] md:mt-[300px] text-3xl font-extrabold text-left text-transparent sm:text-3xl md:text-6xl md:text-left bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
         >
           Au-delà de vos limites
         </h1>

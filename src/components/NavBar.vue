@@ -1,6 +1,9 @@
 <template>
   <div
-    :class="[scrollPosition > 100 ? 'fixed bg-white' : 'absolute ', 'navbar']"
+    :class="[
+      scrollPosition > 100 ? 'fixed bg-white customShadow' : 'absolute ',
+      'navbar',
+    ]"
     class="w-full left-0 right-0 top-0 z-50"
   >
     <!-- Section 1 $store.state.fixedMenu ?  -->
@@ -13,6 +16,7 @@
       <div
         class="absolute z-50 top-0 left-0 w-full h-1 bg-gradient-to-r from-cgreen via-cyellow to-cgreen"
       ></div>
+
       <nav
         class="relative pt-3 md:pt-6 mx-auto pb-6 max-w-7xl md:flex md:justify-between md:items-center"
       >
@@ -103,23 +107,23 @@
         <div
           v-if="$store.state.toggleMenu"
           :class="[
-            scrollPosition > 100 ? ' bg-white pt-3' : ' bg-cblack px-6 pt-6 pb-6',
+            scrollPosition > 100 ? ' bg-white pt-3 ' : ' bg-cblack px-6 pt-6 pb-6',
 
             $store.state.toggleMenu ? '' : '',
           ]"
-          class="mt-6 sm:mt-0 rounded-xl sm:bg-transparent sm:p-0 sm:p-o"
+          class="z-50 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
         >
           <div
-            class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute"
+            class="left-0 z-50 items-center justify-center w-full font-semibold select-none sm:flex lg:absolute"
           >
             <div
-              class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0"
+              class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-16 md:space-y-0 sm:mr-12"
             >
               <router-link
                 to="/about"
                 :class="[
                   scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                  'py-3 sm:mt-0 -mt-8 hover:text-cyellow hover:underline',
+                  'py-3 md:mt-0 -mt-8 hover:text-cyellow hover:underline',
                 ]"
                 href="#_"
                 >À propos</router-link
@@ -162,7 +166,7 @@
                         class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
                       ></div>
                       <div
-                        class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
+                        class="customShadow absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
                       >
                         <router-link
                           :to="service.link"
@@ -173,7 +177,7 @@
                           <span class="flex items-start space-x-4">
                             <component
                               :is="service.icon"
-                              class="flex-shrink-0 mt-1 text-blue-500 text-cgreen w-9 h-9"
+                              class="flex-shrink-0 mt-1 text-blue-500 text-cgreen w-6 h-6 md:w-9 md:h-9"
                               aria-hidden="true"
                             />
                             <span class="flex flex-col space-y-2">
@@ -195,7 +199,7 @@
               <Popover v-slot="{ open }" class="relative py-3">
                 <PopoverButton
                   :class="open ? '' : 'text-opacity-90'"
-                  class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
+                  class="flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
                 >
                   <span
                     :class="[
@@ -225,11 +229,9 @@
                 >
                   <PopoverPanel>
                     <div class="relative">
+                      <div class="tooltip-top transform rotate-180 customShadow"></div>
                       <div
-                        class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
-                      ></div>
-                      <div
-                        class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
+                        class="customShadow absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
                       >
                         <router-link
                           to="/faq"

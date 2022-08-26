@@ -41,4 +41,10 @@ h1 {
 	@apply ring-2 ring-cgreen;
 }
 
+.customShadow {
+	box-shadow: -6px 0px 89px -16px rgba(2, 57, 72, 0.25);
+	-webkit-box-shadow: -6px 0px 89px -16px rgba(2, 57, 72, 0.25);
+	-moz-box-shadow: -6px 0px 89px -16px rgba(2, 57, 72, 0.25);
+}
+
 /* ... other necessary CSS omitted */
