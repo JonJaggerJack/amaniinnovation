@@ -10,7 +10,7 @@
         <p class="text-sm font-semibold tracking-wide uppercase text-cgreen">
           Objectif & vision
         </p>
-        <h2 class="text-4xl font-black sm:text-5xl mt-7 sm:leading-tight">
+        <h2 class="text-3xl font-black sm:text-5xl mt-7 sm:leading-tight">
           Oeuvrer dans des secteurs à impact rapide et intégrateurs
         </h2>
         <p class="text-lg lg:max-w-2xl mt-9 mb-8">
