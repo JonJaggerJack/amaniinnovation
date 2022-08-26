@@ -9,6 +9,10 @@ html {
 	@apply font-reg;
 }
 
+* {
+	@apply transition-all duration-300 ease-in-out;
+}
+
 h1 {
 	@apply text-6xl font-black;
 }
@@ -27,6 +31,14 @@ h1 {
 
 .tooltip-top {
 	@apply content-[''] z-50 absolute -bottom-[25px]  left-1/2 -translate-x-2 border-8 border-x-transparent border-b-transparent border-t-white;
+}
+
+.btn {
+	@apply border-2 border-white ring-transparent border-transparent;
+}
+
+.btn:hover {
+	@apply ring-2 ring-cgreen;
 }
 
 /* ... other necessary CSS omitted */

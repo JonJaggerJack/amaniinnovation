@@ -16,25 +16,33 @@
           l’eau, énergie, transport, agroalimentaire en général et immobilier au sein de
           la ville de Bukavu.
         </p>
-        <button
-          class="group flex justify-start rounded-md relative w-full px-12 py-4 mt-8 text-md font-bold leading-5 text-center text-cblack capitalize bg-cyellow md:w-auto md:mx-0"
-        >
-          En savoir plus
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="w-6 h-6 ml-4 opacity-50 group-hover:opacity-95"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-            />
-          </svg>
-        </button>
+
+        <div class="mt-10">
+          <div class="">
+            <button
+              class="transform hover:scale-[0.97] flex w-auto justify-start btn group whitespace-nowrap items-center text-base font-bold leading-5 text-left text-cblack bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center"
+            >
+              <router-link to="" class="flex justify-start items-center">
+                En savoir plus
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 ml-2 opacity-50 group-hover:opacity-95"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </router-link>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

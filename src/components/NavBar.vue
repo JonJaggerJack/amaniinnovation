@@ -4,12 +4,17 @@
     class="w-full left-0 right-0 top-0 z-50"
   >
     <!-- Section 1 $store.state.fixedMenu ?  -->
-    <section class="w-full px-6 pt-3 bg-tranparent xl:px-8">
+    <section
+      :class="[
+        scrollPosition > 100 ? 'pt-0 pb-0' : 'pt-3 pb-3',
+        'w-full px-4 bg-tranparent xl:px-8',
+      ]"
+    >
       <div
-        class="absolute top-0 left-0 w-full h-3 bg-gradient-to-r from-indigo-600 via-blue-500 to-green-400"
+        class="absolute z-50 top-0 left-0 w-full h-1 bg-gradient-to-r from-cgreen via-cyellow to-cgreen"
       ></div>
       <nav
-        class="relative pt-6 mx-auto md:pb-6 max-w-7xl md:flex md:justify-between md:items-center"
+        class="relative pt-6 mx-auto pb-6 max-w-7xl md:flex md:justify-between md:items-center"
       >
         <div class="relative z-20 flex items-center justify-between">
           <div>
@@ -17,18 +22,27 @@
               class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700"
               to="/"
             >
-              <img
-                v-if="scrollPosition < 100"
-                src="../assets/logo_w.png"
-                alt="Amani Innovation"
-                class="w-[150px]"
-              />
-              <img
-                v-else
-                src="../assets/logo.png"
-                alt="Amani Innovation"
-                class="w-[150px] duration-300 transition-all"
-              />
+              <div v-if="scrollPosition < 100">
+                <img
+                  src="../assets/logo_w.png"
+                  alt="Amani Innovation"
+                  :class="[
+                    scrollPosition > 100 ? 'w-[100px]' : 'w-[100px] md:w-[130px]',
+                    'duration-300',
+                  ]"
+                />
+              </div>
+
+              <div v-else>
+                <img
+                  src="../assets/logo.png"
+                  alt="Amani Innovation"
+                  :class="[
+                    scrollPosition > 100 ? 'w-[100px]' : 'w-[130px]',
+                    'duration-300',
+                  ]"
+                />
+              </div>
             </router-link>
           </div>
 
@@ -36,7 +50,10 @@
           <div x-on:click="mobile = !mobile" class="flex md:hidden">
             <button
               type="button"
-              class="text-gray-500 hover:text-gray-600 focus:outline-none focus:text-gray-600"
+              :class="[
+                scrollPosition > 100 ? 'text-cblack' : ' text-cwhite',
+                'hover:text-gray-600 focus:outline-none focus:text-gray-600',
+              ]"
               aria-label="toggle menu"
             >
               <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
@@ -58,7 +75,10 @@
           >
             <router-link
               to="/about"
-              class="py-3 text-cwhite hover:text-cyellow hover:underline"
+              :class="[
+                scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                'py-3 hover:text-cyellow hover:underline',
+              ]"
               href="#_"
               >À propos</router-link
             >
@@ -68,9 +88,19 @@
                 :class="open ? '' : 'text-opacity-90'"
                 class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
               >
-                <span>Services</span>
+                <span
+                  :class="[
+                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                    'hover:underline',
+                    open ? 'text-cyellow underline' : '',
+                  ]"
+                  >Services</span
+                >
                 <ChevronDownIcon
-                  :class="open ? '' : 'text-opacity-70'"
+                  :class="[
+                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                    open ? 'text-cyellow ' : 'opacity-50',
+                  ]"
                   class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
                   aria-hidden="true"
                 />
@@ -86,9 +116,11 @@
               >
                 <PopoverPanel>
                   <div class="relative">
-                    <div class="tooltip-top transform rotate-180"></div>
                     <div
-                      class="absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white shadow-lg lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl ring-1 ring-black ring-opacity-5"
+                      class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
+                    ></div>
+                    <div
+                      class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
                     >
                       <router-link
                         :to="service.link"
@@ -123,9 +155,19 @@
                 :class="open ? '' : 'text-opacity-90'"
                 class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
               >
-                <span>Ressources</span>
+                <span
+                  :class="[
+                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                    'hover:underline',
+                    open ? 'text-cyellow underline' : '',
+                  ]"
+                  >Ressources</span
+                >
                 <ChevronDownIcon
-                  :class="open ? '' : 'text-opacity-70'"
+                  :class="[
+                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                    open ? 'text-cyellow ' : 'opacity-50',
+                  ]"
                   class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
                   aria-hidden="true"
                 />
@@ -141,9 +183,11 @@
               >
                 <PopoverPanel>
                   <div class="relative">
-                    <div class="tooltip-top transform rotate-180"></div>
                     <div
-                      class="absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white shadow-lg lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl ring-1 ring-black ring-opacity-5"
+                      class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
+                    ></div>
+                    <div
+                      class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
                     >
                       <router-link
                         to="/faq"
@@ -168,27 +212,29 @@
         <div
           class="relative z-20 flex-col justify-center pr-5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
         >
-          <a
-            href="#_"
-            class="group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-sm py-4 px-8 md:text-center md:mx-0"
-          >
-            Nous contacter
-
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-6 h-6 ml-4 opacity-50 group-hover:opacity-95"
+          <div class="transform hover:scale-[0.97]">
+            <router-link
+              to="/contact"
+              class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-              />
-            </svg>
-          </a>
+              Nous contacter
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-4 h-4 ml-2 opacity-50 group-hover:opacity-95"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </router-link>
+          </div>
         </div>
       </nav>
     </section>
