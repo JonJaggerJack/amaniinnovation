@@ -26,7 +26,7 @@
               class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700"
               to="/"
             >
-              <div v-if="scrollPosition < 100">
+              <div v-show="scrollPosition < 100">
                 <img
                   src="../assets/logo_w.png"
                   alt="Amani Innovation"
@@ -37,7 +37,7 @@
                 />
               </div>
 
-              <div v-else>
+              <div v-show="scrollPosition > 100">
                 <img
                   src="../assets/logo.png"
                   alt="Amani Innovation"
