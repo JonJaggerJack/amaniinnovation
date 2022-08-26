@@ -6,7 +6,7 @@
     <!-- Section 1 $store.state.fixedMenu ?  -->
     <section
       :class="[
-        scrollPosition > 100 ? 'pt-0 pb-0' : 'pt-3 pb-3',
+        scrollPosition > 100 ? 'pt-2 sm:pt-0 pb-0' : 'pt-3 pb-3',
         'w-full px-4 bg-tranparent xl:px-8',
       ]"
     >
@@ -14,7 +14,7 @@
         class="absolute z-50 top-0 left-0 w-full h-1 bg-gradient-to-r from-cgreen via-cyellow to-cgreen"
       ></div>
       <nav
-        class="relative pt-6 mx-auto pb-6 max-w-7xl md:flex md:justify-between md:items-center"
+        class="relative pt-3 md:pt-6 mx-auto pb-6 max-w-7xl md:flex md:justify-between md:items-center"
       >
         <div class="relative z-20 flex items-center justify-between">
           <div>
@@ -210,7 +210,7 @@
         </div>
 
         <div
-          class="relative z-20 flex-col justify-center pr-5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
+          class="relative z-20 flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
         >
           <div class="transform hover:scale-[0.97]">
             <router-link
