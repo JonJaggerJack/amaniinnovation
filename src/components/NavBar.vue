@@ -47,7 +47,10 @@
           </div>
 
           <!-- Mobile menu button -->
-          <div x-on:click="mobile = !mobile" class="flex md:hidden">
+          <div
+            @click="$store.state.toggleMenu = !$store.state.toggleMenu"
+            class="flex md:hidden"
+          >
             <button
               type="button"
               v-if="!$store.state.toggleMenu"
@@ -59,13 +62,13 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
                 fill="currentColor"
-                class="w-6 h-6"
+                class="w-5 h-5"
               >
                 <path
                   fill-rule="evenodd"
-                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z"
+                  d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm7 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"
                   clip-rule="evenodd"
                 />
               </svg>
@@ -82,13 +85,13 @@
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
+                viewBox="0 0 20 20"
                 fill="currentColor"
-                class="w-6 h-6"
+                class="w-5 h-5"
               >
                 <path
                   fill-rule="evenodd"
-                  d="M3.97 3.97a.75.75 0 011.06 0L12 10.94l6.97-6.97a.75.75 0 111.06 1.06L13.06 12l6.97 6.97a.75.75 0 11-1.06 1.06L12 13.06l-6.97 6.97a.75.75 0 01-1.06-1.06L10.94 12 3.97 5.03a.75.75 0 010-1.06z"
+                  d="M4.28 3.22a.75.75 0 00-1.06 1.06L8.94 10l-5.72 5.72a.75.75 0 101.06 1.06L10 11.06l5.72 5.72a.75.75 0 101.06-1.06L11.06 10l5.72-5.72a.75.75 0 00-1.06-1.06L10 8.94 4.28 3.22z"
                   clip-rule="evenodd"
                 />
               </svg>
@@ -100,7 +103,9 @@
         <div
           v-if="$store.state.toggleMenu"
           :class="[
-            scrollPosition > 100 ? ' bg-cwhite pt-3' : ' bg-cblack px-6 pt-6 pb-6',
+            scrollPosition > 100 ? ' bg-white pt-3' : ' bg-cblack px-6 pt-6 pb-6',
+
+            $store.state.toggleMenu ? '' : '',
           ]"
           class="mt-6 sm:mt-0 rounded-xl sm:bg-transparent sm:p-0 sm:p-o"
         >
@@ -247,9 +252,9 @@
           </div>
 
           <div
-            class="relative z-20 flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
+            class="flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
           >
-            <div class="transform hover:scale-[0.97]">
+            <div class="md:transform md:hover:scale-[0.97]">
               <router-link
                 to="/contact"
                 class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"
