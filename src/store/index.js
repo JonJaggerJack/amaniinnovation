@@ -2,7 +2,8 @@ import { createStore } from "vuex";
 
 export default createStore({
 	state: {
-		fixedMenu: false
+		fixedMenu: false,
+		toggleMenu: true
 	},
 	getters: {},
 	mutations: {},

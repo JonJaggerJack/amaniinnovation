@@ -50,17 +50,47 @@
           <div x-on:click="mobile = !mobile" class="flex md:hidden">
             <button
               type="button"
+              v-if="!$store.state.toggleMenu"
               :class="[
                 scrollPosition > 100 ? 'text-cblack' : ' text-cwhite',
                 'hover:text-gray-600 focus:outline-none focus:text-gray-600',
               ]"
               aria-label="toggle menu"
             >
-              <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
                 <path
                   fill-rule="evenodd"
-                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                ></path>
+                  d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm8.25 5.25a.75.75 0 01.75-.75h8.25a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              v-else
+              :class="[
+                scrollPosition > 100 ? 'text-cblack' : ' text-cwhite',
+                'hover:text-gray-600 focus:outline-none focus:text-gray-600',
+              ]"
+              aria-label="toggle menu"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.97 3.97a.75.75 0 011.06 0L12 10.94l6.97-6.97a.75.75 0 111.06 1.06L13.06 12l6.97 6.97a.75.75 0 11-1.06 1.06L12 13.06l-6.97 6.97a.75.75 0 01-1.06-1.06L10.94 12 3.97 5.03a.75.75 0 010-1.06z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </button>
           </div>
@@ -68,172 +98,180 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div
-          class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute"
+          v-if="$store.state.toggleMenu"
+          :class="[
+            scrollPosition > 100 ? ' bg-cwhite pt-3' : ' bg-cblack px-6 pt-6 pb-6',
+          ]"
+          class="mt-6 sm:mt-0 rounded-xl sm:bg-transparent sm:p-0 sm:p-o"
         >
           <div
-            class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0"
+            class="left-0 z-10 items-center justify-center w-full font-semibold select-none md:flex lg:absolute"
           >
-            <router-link
-              to="/about"
-              :class="[
-                scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                'py-3 hover:text-cyellow hover:underline',
-              ]"
-              href="#_"
-              >À propos</router-link
+            <div
+              class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-10 xl:space-x-16 md:space-y-0"
             >
-
-            <Popover v-slot="{ open }" class="relative py-3">
-              <PopoverButton
-                :class="open ? '' : 'text-opacity-90'"
-                class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
+              <router-link
+                to="/about"
+                :class="[
+                  scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                  'py-3 sm:mt-0 -mt-8 hover:text-cyellow hover:underline',
+                ]"
+                href="#_"
+                >À propos</router-link
               >
-                <span
-                  :class="[
-                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                    'hover:underline',
-                    open ? 'text-cyellow underline' : '',
-                  ]"
-                  >Services</span
+
+              <Popover v-slot="{ open }" class="relative py-3">
+                <PopoverButton
+                  :class="open ? '' : 'text-opacity-90'"
+                  class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
                 >
-                <ChevronDownIcon
-                  :class="[
-                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                    open ? 'text-cyellow ' : 'opacity-50',
-                  ]"
-                  class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
-                  aria-hidden="true"
-                />
-              </PopoverButton>
+                  <span
+                    :class="[
+                      scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                      'hover:underline',
+                      open ? 'text-cyellow underline' : '',
+                    ]"
+                    >Services</span
+                  >
+                  <ChevronDownIcon
+                    :class="[
+                      scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                      open ? 'text-cyellow ' : 'opacity-50',
+                    ]"
+                    class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
+                    aria-hidden="true"
+                  />
+                </PopoverButton>
 
-              <transition
-                enter-active-class="transition duration-200 ease-out"
-                enter-from-class="translate-y-1 opacity-0"
-                enter-to-class="translate-y-0 opacity-100"
-                leave-active-class="transition duration-150 ease-in"
-                leave-from-class="translate-y-0 opacity-100"
-                leave-to-class="translate-y-1 opacity-0"
-              >
-                <PopoverPanel>
-                  <div class="relative">
-                    <div
-                      class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
-                    ></div>
-                    <div
-                      class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
-                    >
-                      <router-link
-                        :to="service.link"
-                        :key="service"
-                        v-for="service in services"
-                        class="group block px-4 py-3 pr-0 text-base text-gray-700 cursor-pointer hover:bg-cgray-200 rounded-xl hover:text-gray-800"
+                <transition
+                  enter-active-class="transition duration-200 ease-out"
+                  enter-from-class="translate-y-1 opacity-0"
+                  enter-to-class="translate-y-0 opacity-100"
+                  leave-active-class="transition duration-150 ease-in"
+                  leave-from-class="translate-y-0 opacity-100"
+                  leave-to-class="translate-y-1 opacity-0"
+                >
+                  <PopoverPanel>
+                    <div class="relative">
+                      <div
+                        class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
+                      ></div>
+                      <div
+                        class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
                       >
-                        <span class="flex items-start space-x-4">
-                          <component
-                            :is="service.icon"
-                            class="flex-shrink-0 mt-1 text-blue-500 text-cgreen w-9 h-9"
-                            aria-hidden="true"
-                          />
-                          <span class="flex flex-col space-y-2">
-                            <span class="group-hover:underline">
-                              {{ service.name }}
-                            </span>
-                            <span class="text-sm font-normal text-cgray-900">
-                              {{ service.desc }}
+                        <router-link
+                          :to="service.link"
+                          :key="service"
+                          v-for="service in services"
+                          class="group block px-4 py-3 pr-0 text-base text-gray-700 cursor-pointer hover:bg-cgray-200 rounded-xl hover:text-gray-800"
+                        >
+                          <span class="flex items-start space-x-4">
+                            <component
+                              :is="service.icon"
+                              class="flex-shrink-0 mt-1 text-blue-500 text-cgreen w-9 h-9"
+                              aria-hidden="true"
+                            />
+                            <span class="flex flex-col space-y-2">
+                              <span class="group-hover:underline">
+                                {{ service.name }}
+                              </span>
+                              <span class="text-sm font-normal text-cgray-900">
+                                {{ service.desc }}
+                              </span>
                             </span>
                           </span>
-                        </span>
-                      </router-link>
+                        </router-link>
+                      </div>
                     </div>
-                  </div>
-                </PopoverPanel>
-              </transition>
-            </Popover>
+                  </PopoverPanel>
+                </transition>
+              </Popover>
 
-            <Popover v-slot="{ open }" class="relative py-3">
-              <PopoverButton
-                :class="open ? '' : 'text-opacity-90'"
-                class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
-              >
-                <span
-                  :class="[
-                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                    'hover:underline',
-                    open ? 'text-cyellow underline' : '',
-                  ]"
-                  >Ressources</span
+              <Popover v-slot="{ open }" class="relative py-3">
+                <PopoverButton
+                  :class="open ? '' : 'text-opacity-90'"
+                  class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
                 >
-                <ChevronDownIcon
-                  :class="[
-                    scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                    open ? 'text-cyellow ' : 'opacity-50',
-                  ]"
-                  class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
-                  aria-hidden="true"
-                />
-              </PopoverButton>
+                  <span
+                    :class="[
+                      scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                      'hover:underline',
+                      open ? 'text-cyellow underline' : '',
+                    ]"
+                    >Ressources</span
+                  >
+                  <ChevronDownIcon
+                    :class="[
+                      scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
+                      open ? 'text-cyellow ' : 'opacity-50',
+                    ]"
+                    class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
+                    aria-hidden="true"
+                  />
+                </PopoverButton>
 
-              <transition
-                enter-active-class="transition duration-200 ease-out"
-                enter-from-class="translate-y-1 opacity-0"
-                enter-to-class="translate-y-0 opacity-100"
-                leave-active-class="transition duration-150 ease-in"
-                leave-from-class="translate-y-0 opacity-100"
-                leave-to-class="translate-y-1 opacity-0"
-              >
-                <PopoverPanel>
-                  <div class="relative">
-                    <div
-                      class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
-                    ></div>
-                    <div
-                      class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
-                    >
-                      <router-link
-                        to="/faq"
-                        class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
+                <transition
+                  enter-active-class="transition duration-200 ease-out"
+                  enter-from-class="translate-y-1 opacity-0"
+                  enter-to-class="translate-y-0 opacity-100"
+                  leave-active-class="transition duration-150 ease-in"
+                  leave-from-class="translate-y-0 opacity-100"
+                  leave-to-class="translate-y-1 opacity-0"
+                >
+                  <PopoverPanel>
+                    <div class="relative">
+                      <div
+                        class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
+                      ></div>
+                      <div
+                        class="shadow-cblack shadow-2xl absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
                       >
-                        FAQ
-                      </router-link>
-                      <router-link
-                        to="/blog"
-                        class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
-                      >
-                        Notre blog
-                      </router-link>
+                        <router-link
+                          to="/faq"
+                          class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
+                        >
+                          FAQ
+                        </router-link>
+                        <router-link
+                          to="/blog"
+                          class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
+                        >
+                          Notre blog
+                        </router-link>
+                      </div>
                     </div>
-                  </div>
-                </PopoverPanel>
-              </transition>
-            </Popover>
+                  </PopoverPanel>
+                </transition>
+              </Popover>
+            </div>
           </div>
-        </div>
 
-        <div
-          class="relative z-20 flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
-        >
-          <div class="transform hover:scale-[0.97]">
-            <router-link
-              to="/contact"
-              class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"
-            >
-              Nous contacter
-
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-4 h-4 ml-2 opacity-50 group-hover:opacity-95"
+          <div
+            class="relative z-20 flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
+          >
+            <div class="transform hover:scale-[0.97]">
+              <router-link
+                to="/contact"
+                class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                />
-              </svg>
-            </router-link>
+                Nous contacter
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 ml-2 opacity-50 group-hover:opacity-95"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
+              </router-link>
+            </div>
           </div>
         </div>
       </nav>
