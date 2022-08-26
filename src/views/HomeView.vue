@@ -48,17 +48,20 @@
       </div>
     </section>
     <HomeS1 />
+    <HomeS2 />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import HomeS1 from "./sections/HomeS1.vue";
+import HomeS2 from "./sections/HomeS2.vue";
 
 export default {
   name: "HomeView",
   components: {
     HomeS1,
+    HomeS2,
   },
 };
 </script>
