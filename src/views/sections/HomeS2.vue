@@ -5,30 +5,32 @@
       <p class="text-center text-sm font-semibold tracking-wide uppercase text-cgreen">
         Produits & services
       </p>
-      <h2 class="text-center text-3xl font-black sm:text-5xl mt-7 sm:leading-tight">
+      <h2 class="text-center text-2xl font-black sm:text-5xl mt-7 sm:leading-tight">
         Nos produits et services
       </h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-8 pt-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-8 sm:pt-12">
         <!-- Box 1 -->
 
         <div class="overflow-hidden text-center bg-black">
-          <div class="px-5 py-20 md:px-5 md:py-5">
-            <h2 class="text-2xl font-extrabold mb-8 flex justify-center">
+          <div class="px-0 pt-16 pb-4 md:px-5 md:py-5">
+            <h2
+              class="text-xl sm:text-2xl font-extrabold mb-8 flex justify-center items-center"
+            >
               <span>
-                <img src="/assets/img/content/2.png" alt="" class="w-[50px] mr-6"
+                <img
+                  src="/assets/img/content/2.png"
+                  alt=""
+                  class="w-[20px] sm:w-[30px] mr-4"
               /></span>
               Aqua GL
             </h2>
-            <p class="text-xl text-cwhite">
-              Filtration naturelle de l'eau <br />
-              de grande qualité
+            <p class="text-base text-cwhite max-w-[200px] flex justify-center mx-auto">
+              Filtration naturelle de l'eau de bonne qualité
             </p>
-            <div
-              class="flex flex-col items-center justify-center my-7 sm:flex-row sm:space-x-5"
-            >
+            <div class="flex items-center justify-center my-8 flex-row sm:space-x-5">
               <a
                 href="#_"
-                class="flex items-center w-auto mx-auto text-xl leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
+                class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
               >
                 <span>En savoir plus</span>
                 <svg
@@ -46,7 +48,7 @@
               </a>
               <a
                 href="#_"
-                class="flex items-center w-auto mx-auto text-xl leading-tight text-center text-cgreen font-semibold hover:underline sm:mx-0"
+                class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cgreen font-semibold hover:underline sm:mx-0"
               >
                 <span>Nous contacter</span>
                 <svg
@@ -65,29 +67,32 @@
               </a>
             </div>
           </div>
-          <img src="/assets/img/content/5.png" class="w-full" />
+          <div class="bg-cwhite bg-opacity-10 rounded-xl">
+            <img src="/assets/img/content/5.png" class="w-full" />
+          </div>
         </div>
 
         <!-- Box 3 -->
         <div class="overflow-hidden text-center bg-gray-50">
-          <div class="px-5 py-20 md:px-5 md:py-5">
-            <h2 class="text-2xl font-extrabold mb-8 flex justify-center items-center">
+          <div class="px-0 pt-16 pb-4 md:px-5 md:py-5">
+            <h2
+              class="text-xl sm:text-2xl font-extrabold mb-8 flex justify-center items-center"
+            >
               <span>
-                <img src="/assets/img/content/3.png" alt="" class="w-[30px] mr-6"
+                <img
+                  src="/assets/img/content/3.png"
+                  alt=""
+                  class="w-[15px] sm:w-[20px] mr-4"
               /></span>
               Amani Logistics
             </h2>
-
-            <p class="text-xl text-cwhite">
-              Fret routier et sercves <br />
-              logistiques intègres
+            <p class="text-base text-cwhite max-w-[200px] flex justify-center mx-auto">
+              Fret routier et sercves logistiques intègres
             </p>
-            <div
-              class="flex flex-col items-center justify-center my-7 sm:flex-row sm:space-x-5"
-            >
+            <div class="flex items-center justify-center my-8 flex-row sm:space-x-5">
               <a
                 href="#_"
-                class="flex items-center w-auto mx-auto text-xl leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
+                class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
               >
                 <span>En savoir plus</span>
                 <svg
@@ -105,7 +110,7 @@
               </a>
               <a
                 href="#_"
-                class="flex items-center w-auto mx-auto text-xl leading-tight text-center text-cgreen font-semibold hover:underline sm:mx-0"
+                class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cgreen font-semibold hover:underline sm:mx-0"
               >
                 <span>Nous contacter</span>
                 <svg
@@ -124,7 +129,10 @@
               </a>
             </div>
           </div>
-          <img src="/assets/img/content/4.png" class="w-full" />
+
+          <div class="bg-cgreen bg-opacity-10 rounded-xl">
+            <img src="/assets/img/content/4.png" class="w-full" />
+          </div>
         </div>
       </div>
     </div>
