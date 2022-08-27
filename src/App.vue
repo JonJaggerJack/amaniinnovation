@@ -18,9 +18,6 @@ export default {
   components: { NavBar, FooterView },
   mixins: [VueScreenSizeMixin],
 
-  computed() {
-    this.handleScreen();
-  },
   methods: {
     handleScreen() {
       console.log(this.$vssWidth);
@@ -32,17 +29,22 @@ export default {
       }
     },
   },
+
   beforeMount() {
     this.handleScreen();
     window.addEventListener("resize", this.handleScreen);
+    window.addEventListener("scroll", this.handleScreen);
+    window.addEventListener("mouseover", this.handleScreen);
   },
 
   unmounted() {
+    this.handleScreen();
     window.removeEventListener("resize", this.handleScreen);
+    window.removeEventListener("scroll", this.handleScreen);
+    window.removeEventListener("mouseover", this.handleScreen);
   },
   setup() {
     provide("store", store);
-
     return {};
   },
 };
