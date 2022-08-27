@@ -65,7 +65,7 @@
               </a>
             </div>
           </div>
-          <img src="https://cdn.devdojo.com/images/april2021/apple-tv-cards.jpg" />
+          <img src="/assets/img/content/5.png" class="w-full" />
         </div>
 
         <!-- Box 3 -->
@@ -124,7 +124,7 @@
               </a>
             </div>
           </div>
-          <img src="https://cdn.devdojo.com/images/april2021/apple-arcade.jpg" />
+          <img src="/assets/img/content/4.png" class="w-full" />
         </div>
       </div>
     </div>
@@ -136,4 +136,6 @@ export default {
   name: "HomeS2",
   setup() {},
 };
+
+335660;
 </script>
