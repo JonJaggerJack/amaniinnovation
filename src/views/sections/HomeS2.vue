@@ -12,7 +12,10 @@
         <!-- Box 1 -->
 
         <div class="overflow-hidden text-center bg-black">
-          <div class="px-0 pt-16 pb-4 md:px-5 md:py-5">
+          <div class="px-0 pt-16 pb-4 md:px-5 md:py-5 relative">
+            <div class="absolute -left-2 top-3 sm:-left-2 sm:-top-16 opacity-5">
+              <span class="text-[140px] sm:text-[220px] font-black">1</span>
+            </div>
             <h2
               class="text-xl sm:text-2xl font-extrabold mb-8 flex justify-center items-center"
             >
@@ -74,7 +77,10 @@
 
         <!-- Box 3 -->
         <div class="overflow-hidden text-center bg-gray-50">
-          <div class="px-0 pt-16 pb-4 md:px-5 md:py-5">
+          <div class="px-0 pt-16 pb-4 md:px-5 md:py-5 relative">
+            <div class="absolute -left-2 top-3 sm:-left-2 sm:-top-16 opacity-5">
+              <span class="text-[140px] sm:text-[220px] font-black">2</span>
+            </div>
             <h2
               class="text-xl sm:text-2xl font-extrabold mb-8 flex justify-center items-center"
             >
