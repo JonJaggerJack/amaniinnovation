@@ -5,7 +5,8 @@ export default createStore({
 	state: {
 		fixedMenu: false,
 		toggleMenu: true,
-		scrollPosition: ref(0)
+		scrollPosition: ref(0),
+		windowsW: ref(null)
 	},
 	getters: {},
 	mutations: {},

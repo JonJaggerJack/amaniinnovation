@@ -108,5 +108,7 @@ export default {
     HomeS1,
     HomeS2,
   },
+  computed() {},
+  setup() {},
 };
 </script>

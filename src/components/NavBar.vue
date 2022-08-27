@@ -24,6 +24,7 @@
           <div>
             <router-link
               class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700"
+              @click="$store.state.toggleMenu ? toggleMenu() : null"
               to="/"
             >
               <div v-show="scrollPosition < 100">
@@ -51,10 +52,7 @@
           </div>
 
           <!-- Mobile menu button -->
-          <div
-            @click="$store.state.toggleMenu = !$store.state.toggleMenu"
-            class="flex md:hidden"
-          >
+          <div @click="toggleMenu()" class="flex md:hidden">
             <button
               type="button"
               v-if="!$store.state.toggleMenu"
@@ -105,13 +103,25 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div
+          v-if="$store.state.windowsW < 770 && $store.state.toggleMenu"
+          @click="toggleMenu()"
+          :class="
+            scrollPosition < 100
+              ? 'bg-cblack bg-opacity-70 backdrop-blur-sm'
+              : 'bg-cwhite bg-opacity-70 backdrop-blur-sm'
+          "
+          class="opaAnnim fixed top-0 right-0 w-full h-full -z-10"
+        ></div>
+        <div
           v-if="$store.state.toggleMenu"
           :class="[
-            scrollPosition > 100 ? ' bg-white pt-3 ' : ' bg-cblack px-6 pt-6 pb-6',
+            scrollPosition > 100
+              ? ' bg-white pt-3 tooglen'
+              : ' bg-cblack px-6 pt-6 pb-6 tooglen',
 
             $store.state.toggleMenu ? '' : '',
           ]"
-          class="tooglen z-0 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
+          class="md:animate-none z-0 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
         >
           <div
             class="left-0 z-0 items-center justify-center w-full font-semibold select-none sm:flex lg:absolute"
@@ -120,6 +130,7 @@
               class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-16 md:space-y-0 sm:mr-12"
             >
               <router-link
+                @click="toggleMenu()"
                 to="/about"
                 :class="[
                   scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
@@ -129,10 +140,10 @@
                 >À propos</router-link
               >
 
-              <Popover v-slot="{ open }" class="relative py-3">
+              <Popover v-slot="{ open }" class="py-3 z-50">
                 <PopoverButton
                   :class="open ? '' : 'text-opacity-90'"
-                  class="relative z-10 flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
+                  class="flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
                 >
                   <span
                     :class="[
@@ -161,7 +172,7 @@
                   leave-to-class="translate-y-1 opacity-0"
                 >
                   <PopoverPanel>
-                    <div class="relative">
+                    <div class="relative z-50">
                       <div
                         class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
                       ></div>
@@ -169,6 +180,7 @@
                         class="customShadow absolute left-0 z-30 w-full p-1 sm:p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
                       >
                         <router-link
+                          @click="toggleMenu()"
                           :to="service.link"
                           :key="service"
                           v-for="service in services"
@@ -196,7 +208,7 @@
                 </transition>
               </Popover>
 
-              <Popover v-slot="{ open }" class="py-3">
+              <Popover v-slot="{ open }" class="py-3 z-30">
                 <PopoverButton
                   :class="open ? '' : 'text-opacity-90'"
                   class="flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
@@ -205,14 +217,14 @@
                     :class="[
                       scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
                       'hover:underline',
-                      open ? 'text-cyellow underline' : '',
+                      open ? 'text-cyellow underline z-30' : '',
                     ]"
                     >Ressources</span
                   >
                   <ChevronDownIcon
                     :class="[
                       scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                      open ? 'text-cyellow transform rotate-[180deg]' : 'opacity-50',
+                      open ? 'text-cyellow transform rotate-[180deg] ' : 'opacity-50 z-0',
                     ]"
                     class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
                     aria-hidden="true"
@@ -234,12 +246,14 @@
                         class="customShadow absolute left-0 z-30 w-full p-2 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
                       >
                         <router-link
+                          @click="toggleMenu()"
                           to="/faq"
                           class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
                         >
                           FAQ
                         </router-link>
                         <router-link
+                          @click="toggleMenu()"
                           to="/blog"
                           class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
                         >
@@ -258,6 +272,7 @@
           >
             <div class="-z-10 md:transform md:hover:scale-[0.97]">
               <router-link
+                @click="toggleMenu()"
                 to="/contact"
                 class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"
               >
@@ -324,6 +339,10 @@ export default {
       // console.log(store.state.scrollPosition, event);
     }
 
+    function toggleMenu() {
+      store.state.toggleMenu = !store.state.toggleMenu;
+    }
+
     onBeforeMount(() => {
       window.addEventListener("scroll", handleScroll);
     });
@@ -337,6 +356,7 @@ export default {
       services,
       handleScroll,
       scrollPosition,
+      toggleMenu,
     };
   },
 };

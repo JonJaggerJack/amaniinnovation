@@ -18,9 +18,13 @@ export default {
   components: { NavBar, FooterView },
   mixins: [VueScreenSizeMixin],
 
+  computed() {
+    this.handleScreen();
+  },
   methods: {
     handleScreen() {
       console.log(this.$vssWidth);
+      store.state.windowsW = this.$vssWidth;
       if (this.$vssWidth < 770) {
         store.state.toggleMenu = false;
       } else {
@@ -30,7 +34,6 @@ export default {
   },
   beforeMount() {
     this.handleScreen();
-
     window.addEventListener("resize", this.handleScreen);
   },
 
