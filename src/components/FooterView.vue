@@ -108,11 +108,11 @@
         <div class="absolute -top-4 right-4 sm:right-0">
           <button
             @click="backToTop()"
-            class="text-cblack bg-cyellow p-2 rounded-lg animate-bounce"
+            class="text-cblack btn bg-cyellow p-2 rounded-lg animate-bounce"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6"
+              class="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

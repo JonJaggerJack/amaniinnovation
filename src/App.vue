@@ -29,6 +29,8 @@ export default {
     },
   },
   beforeMount() {
+    this.handleScreen();
+
     window.addEventListener("resize", this.handleScreen);
   },
 

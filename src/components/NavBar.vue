@@ -14,13 +14,13 @@
       ]"
     >
       <div
-        class="absolute z-50 top-0 left-0 w-full h-1 bg-gradient-to-r from-cgreen via-cyellow to-cgreen"
+        class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cgreen via-cyellow to-cgreen"
       ></div>
 
       <nav
-        class="relative pt-3 md:pt-6 mx-auto pb-6 max-w-6xl md:flex md:justify-between md:items-center"
+        class="relative z-0 pt-3 md:pt-6 mx-auto pb-6 max-w-6xl md:flex md:justify-between md:items-center"
       >
-        <div class="relative z-20 flex items-center justify-between">
+        <div class="relative z-50 flex items-center justify-between">
           <div>
             <router-link
               class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700"
@@ -32,7 +32,7 @@
                   alt="Amani Innovation"
                   :class="[
                     scrollPosition > 100 ? 'w-[100px]' : 'w-[100px] md:w-[130px]',
-                    'duration-300',
+                    'duration-100',
                   ]"
                 />
               </div>
@@ -43,7 +43,7 @@
                   alt="Amani Innovation"
                   :class="[
                     scrollPosition > 100 ? 'w-[100px]' : 'w-[130px]',
-                    'duration-300',
+                    'duration-100',
                   ]"
                 />
               </div>
@@ -60,7 +60,7 @@
               v-if="!$store.state.toggleMenu"
               :class="[
                 scrollPosition > 100 ? 'text-cblack' : ' text-cwhite',
-                'hover:text-gray-600 focus:outline-none focus:text-gray-600',
+                'tooglem hover:text-gray-600 focus:outline-none focus:text-gray-600',
               ]"
               aria-label="toggle menu"
             >
@@ -83,7 +83,7 @@
               v-else
               :class="[
                 scrollPosition > 100 ? 'text-cblack' : ' text-cwhite',
-                'hover:text-gray-600 focus:outline-none focus:text-gray-600',
+                'tooglem2 hover:text-gray-600 focus:outline-none focus:text-gray-600',
               ]"
               aria-label="toggle menu"
             >
@@ -111,10 +111,10 @@
 
             $store.state.toggleMenu ? '' : '',
           ]"
-          class="z-50 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
+          class="tooglen z-0 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
         >
           <div
-            class="left-0 z-50 items-center justify-center w-full font-semibold select-none sm:flex lg:absolute"
+            class="left-0 z-0 items-center justify-center w-full font-semibold select-none sm:flex lg:absolute"
           >
             <div
               class="flex flex-col justify-center w-full mt-4 space-y-2 md:mt-0 md:flex-row md:space-x-6 lg:space-x-16 md:space-y-0 sm:mr-12"
@@ -145,7 +145,7 @@
                   <ChevronDownIcon
                     :class="[
                       scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                      open ? 'text-cyellow ' : 'opacity-50',
+                      open ? 'text-cyellow transform rotate-[180deg]' : 'opacity-50',
                     ]"
                     class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
                     aria-hidden="true"
@@ -166,13 +166,13 @@
                         class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
                       ></div>
                       <div
-                        class="customShadow absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
+                        class="customShadow absolute left-0 z-30 w-full p-1 sm:p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
                       >
                         <router-link
                           :to="service.link"
                           :key="service"
                           v-for="service in services"
-                          class="group block px-4 py-3 pr-0 text-base text-gray-700 cursor-pointer hover:bg-cgray-200 rounded-xl hover:text-gray-800"
+                          class="group block px-4 py-3 pr-4 text-base text-gray-700 cursor-pointer hover:bg-cgray-200 rounded-xl hover:text-gray-800"
                         >
                           <span class="flex items-start space-x-4">
                             <component
@@ -196,7 +196,7 @@
                 </transition>
               </Popover>
 
-              <Popover v-slot="{ open }" class="relative py-3">
+              <Popover v-slot="{ open }" class="py-3">
                 <PopoverButton
                   :class="open ? '' : 'text-opacity-90'"
                   class="flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
@@ -212,7 +212,7 @@
                   <ChevronDownIcon
                     :class="[
                       scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                      open ? 'text-cyellow ' : 'opacity-50',
+                      open ? 'text-cyellow transform rotate-[180deg]' : 'opacity-50',
                     ]"
                     class="ml-2 h-5 w-5 text-orange-300 transition duration-150 ease-in-out group-hover:text-opacity-80"
                     aria-hidden="true"
@@ -231,7 +231,7 @@
                     <div class="relative">
                       <div class="tooltip-top transform rotate-180 customShadow"></div>
                       <div
-                        class="customShadow absolute left-0 z-30 w-full p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
+                        class="customShadow absolute left-0 z-30 w-full p-2 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
                       >
                         <router-link
                           to="/faq"
@@ -256,7 +256,7 @@
           <div
             class="flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
           >
-            <div class="md:transform md:hover:scale-[0.97]">
+            <div class="-z-10 md:transform md:hover:scale-[0.97]">
               <router-link
                 to="/contact"
                 class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"

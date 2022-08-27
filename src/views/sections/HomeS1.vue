@@ -64,7 +64,7 @@
           <button class="transform hover:scale-[0.97]">
             <router-link
               to="#_"
-              class="inline-block px-5 py-3 mt-8 text-sm text-white bg-cblack rounded-md hover:bg-gray-800"
+              class="inline-block hover:underline px-5 py-3 mt-8 text-sm text-white bg-cblack rounded-md hover:bg-gray-800 ring-2 ring-transparent hover:ring-2 hover:ring-offset-2 hover:ring-cblack border-transparent"
             >
               <span class="font-medium">Decouvrez nos services</span> -
               <span class="font-light">ici</span>
