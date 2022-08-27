@@ -2,7 +2,7 @@
   <!-- Section 1 -->
   <section class="w-full bg-white">
     <div
-      class="flex flex-col px-4 xl:px-0 py-20 mx-auto max-w-7xl lg:flex-row lg:space-x-24"
+      class="flex flex-col px-4 xl:px-0 py-20 mx-auto max-w-6xl lg:flex-row lg:space-x-24"
     >
       <div
         class="relative w-full mb-10 lg:text-left sm:text-center lg:w-1/2 xl:w-7/12 lg:mb-0"

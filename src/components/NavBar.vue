@@ -18,7 +18,7 @@
       ></div>
 
       <nav
-        class="relative pt-3 md:pt-6 mx-auto pb-6 max-w-7xl md:flex md:justify-between md:items-center"
+        class="relative pt-3 md:pt-6 mx-auto pb-6 max-w-6xl md:flex md:justify-between md:items-center"
       >
         <div class="relative z-20 flex items-center justify-between">
           <div>
@@ -318,9 +318,10 @@ export default {
 
     var scrollPosition = ref(0);
 
-    function handleScroll(event) {
-      scrollPosition.value = window.scrollY;
-      console.log(scrollPosition.value, event);
+    function handleScroll() {
+      store.state.scrollPosition = window.scrollY;
+      scrollPosition.value = store.state.scrollPosition;
+      // console.log(store.state.scrollPosition, event);
     }
 
     onBeforeMount(() => {

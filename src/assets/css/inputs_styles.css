@@ -47,4 +47,7 @@ h1 {
 	-moz-box-shadow: -6px 0px 89px -16px rgba(2, 57, 72, 0.25);
 }
 
+.cnav--ul__li:hover {
+	@apply underline;
+}
 /* ... other necessary CSS omitted */

@@ -1,7 +1,7 @@
 <template>
   <!-- Section 1 -->
-  <section class="w-full bg-cblack text-white">
-    <div class="mx-auto max-w-7xl px-4 sm:px-0 py-16 sm:py-20">
+  <section class="w-full bg-gradient-to-b from-cblack via-cblack to-[#335660] text-white">
+    <div class="mx-auto max-w-6xl px-4 sm:px-0 py-16 sm:py-20">
       <p class="text-center text-sm font-semibold tracking-wide uppercase text-cgreen">
         Produits & services
       </p>
@@ -31,13 +31,13 @@
               Filtration naturelle de l'eau de bonne qualité
             </p>
             <div class="flex items-center justify-center my-8 flex-row sm:space-x-5">
-              <a
-                href="#_"
+              <router-link
+                to="/services/aquagl"
                 class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
               >
                 <span>En savoir plus</span>
                 <svg
-                  class="w-4 transform -rotate-45 h-4 ml-0.5"
+                  class="w-4 transform -rotate-45 h-4 ml-2 opacity-70"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -48,14 +48,14 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a
-                href="#_"
+              </router-link>
+              <router-link
+                to="/contact"
                 class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cgreen font-semibold hover:underline sm:mx-0"
               >
                 <span>Nous contacter</span>
                 <svg
-                  class="w-4 h-4 ml-0.5"
+                  class="w-4 h-4 ml-2 opacity-70"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -67,7 +67,7 @@
                     d="M9 5l7 7-7 7"
                   ></path>
                 </svg>
-              </a>
+              </router-link>
             </div>
           </div>
           <div class="bg-cwhite bg-opacity-10 rounded-xl">
@@ -96,13 +96,13 @@
               Fret routier et sercves logistiques intègres
             </p>
             <div class="flex items-center justify-center my-8 flex-row sm:space-x-5">
-              <a
-                href="#_"
+              <router-link
+                to="/services/logistics"
                 class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
               >
                 <span>En savoir plus</span>
                 <svg
-                  class="w-4 transform -rotate-45 h-4 ml-0.5"
+                  class="w-4 transform -rotate-45 h-4 ml-2 opacity-70"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -113,14 +113,14 @@
                     clip-rule="evenodd"
                   ></path>
                 </svg>
-              </a>
-              <a
-                href="#_"
+              </router-link>
+              <router-link
+                to="/contact"
                 class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cgreen font-semibold hover:underline sm:mx-0"
               >
                 <span>Nous contacter</span>
                 <svg
-                  class="w-4 h-4 ml-0.5"
+                  class="w-4 h-4 ml-2 opacity-70"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -132,7 +132,7 @@
                     d="M9 5l7 7-7 7"
                   ></path>
                 </svg>
-              </a>
+              </router-link>
             </div>
           </div>
 
