@@ -36,7 +36,7 @@
               </span>
             </div>
           </h1>
-          <p class="text-cwhite font-medium text-center sm:text-left">
+          <p class="text-cgray-400 font-medium text-center sm:text-left">
             Une société née des initiatives pour l’émergence et la croissance dans le
             domaine de l’eau, énergie, transport, agroalimentaire en général et immobilier
             au sein de la ville de Bukavu
@@ -84,18 +84,21 @@
     </section>
     <AboutS1 />
     <AboutS2 />
+    <AboutS3 />
   </div>
 </template>
 
 <script>
 import AboutS1 from "./sections/AboutS1.vue";
 import AboutS2 from "./sections/AboutS2.vue";
+import AboutS3 from "./sections/AboutS3.vue";
 
 export default {
   name: "AboutView",
   components: {
     AboutS1,
     AboutS2,
+    AboutS3,
   },
   setup() {},
 };

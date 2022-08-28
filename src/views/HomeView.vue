@@ -31,7 +31,7 @@
           </h1>
 
           <p
-            class="mt-8 text-sm text-left text-cwhite sm:text-base md:text-lg md:max-w-xl md:text-left"
+            class="mt-8 text-md text-left text-cgray-400 sm:text-base md:text-lg md:max-w-xl md:text-left"
           >
             Société née des initiatives pour l’émergence et la croissance dans le domaine
             de l’eau, énergie, transport, agroalimentaire en général et immobilier au sein
@@ -43,7 +43,7 @@
               <button class="transform hover:scale-[0.95] flex w-auto justify-start">
                 <router-link
                   to="/about"
-                  class="btn font-bold text-base flex w-auto justify-start items-center hover:underline px-6 py-3 mt-8 text-cblack bg-cyellow rounded-md"
+                  class="btn font-bold text-base flex w-auto justify-start items-center hover:underline px-6 py-3 mt-4 sm:mt-8 text-cblack bg-cyellow rounded-md"
                 >
                   En savoir plus
 

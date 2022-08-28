@@ -13,7 +13,7 @@
         <h2 class="text-3xl font-black sm:text-5xl mt-7 sm:leading-tight">
           Oeuvrer dans des secteurs à impact rapide et intégrateurs
         </h2>
-        <p class="text-lg lg:max-w-2xl mt-9 mb-8">
+        <p class="text-cgray-800 text-lg lg:max-w-2xl mt-9 mb-8">
           Prenant conscience du chômage élevé exacerbant le niveau de pauvreté en Afrique
           et épris par le souci de développement et de faire mieux :
         </p>
@@ -31,8 +31,8 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span class="text-md text-gray-600"
-              ><span class="font-bold text-gray-900">Amani Innovation </span> a pour
+            <span class="text-md text-cgray-700"
+              ><span class="font-bold text-cgray-800">Amani Innovation </span> a pour
               vision d’œuvrer dans des secteurs à impact rapide et intégrateurs, pouvant
               améliorer l’écosystème entrepreneurial et l’environnement
               socioéconomique</span
@@ -52,8 +52,8 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span class="text-md text-gray-600"
-              ><span class="font-bold text-gray-900">En particulier</span> au sein de la
+            <span class="text-md text-cgray-700"
+              ><span class="font-bold text-cgray-800">En particulier</span> au sein de la
               ville de Bukavu et de ses environs ,de toute la RDC , dans la région du
               grand lacs et en général dans toute</span
             >
@@ -92,7 +92,7 @@
       </div>
 
       <div
-        class="relative flex flex-col items-center justify-center flex-shrink-0 w-full max-w-2xl py-10 sm:py-16 mx-auto bg-cgray-100 rounded-lg lg:w-1/2 lg:mx-0 xl:w-5/12"
+        class="relative flex flex-col items-center justify-center flex-shrink-0 w-full max-w-2xl py-10 sm:py-16 mx-auto bg-cgray-100 bg-opacity-70 rounded-lg lg:w-1/2 lg:mx-0 xl:w-5/12"
       >
         <img
           src="/assets/img/content/1.png"

@@ -1,6 +1,6 @@
 <template>
   <!-- Section 1 -->
-  <section class="w-full bg-cgray-100 pt-7 pb-7 md:pt-20 md:pb-24">
+  <section class="w-full bg-cgray-100 bg-opacity-0 pt-7 pb-7 md:pt-20 md:pb-24">
     <div
       class="box-border flex flex-col items-center content-center px-4 mx-auto leading-6 text-black border-0 border-gray-300 border-solid md:flex-row max-w-6xl lg:px-4"
     >
@@ -24,7 +24,7 @@
           Notre Vision
         </h2>
         <p
-          class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 text-md lg:text-lg"
+          class="text-cgray-800 pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 text-md lg:text-lg"
         >
           Est d’œuvrer dans des secteurs à impact rapide et intégrateurs, pouvant
           améliorer :
@@ -37,7 +37,7 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> L’écosystème entrepreneurial </span>
+            <span class="text-cgray-700"> L’écosystème entrepreneurial </span>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
@@ -46,7 +46,7 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> Et l’environnement socioéconomique </span>
+            <span class="text-cgray-700"> Et l’environnement socioéconomique </span>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
@@ -55,7 +55,9 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> En particulier au sein de la ville de Bukavu </span>
+            <span class="text-cgray-700">
+              En particulier au sein de la ville de Bukavu
+            </span>
           </li>
         </ul>
       </div>
@@ -72,7 +74,7 @@
           Nos valeurs
         </h2>
         <p
-          class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg"
+          class="text-cgray-800 pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg"
         >
           En vue d'œuvrer par package de produit en débutant par la transformation
           industrielle au travers la production et l’offre de l’eau de source au sein de
@@ -86,7 +88,7 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> Une relation basée sur la confiance </span>
+            <span class="text-cgray-700"> Une relation basée sur la confiance </span>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
@@ -95,7 +97,7 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> La solidarité entre les actionnaire </span>
+            <span class="text-cgray-700"> La solidarité entre les actionnaire </span>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
@@ -104,7 +106,9 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> La fibre sociale du lien familial qui les unit </span>
+            <span class="text-cgray-700">
+              La fibre sociale du lien familial qui les unit
+            </span>
           </li>
         </ul>
       </div>
@@ -144,7 +148,7 @@
           Notre Objectif
         </h2>
         <p
-          class="pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg"
+          class="text-cgray-800 pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg"
         >
           Nous voulons créer des activités dans different secteurs, dont les plus envisagé
           :
@@ -157,7 +161,7 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> Transformation industrielle et courtage </span>
+            <span class="text-cgray-700"> Transformation industrielle et courtage </span>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
@@ -166,7 +170,9 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> Assurances et de transport et communication </span>
+            <span class="text-cgray-700">
+              Assurances et de transport et communication
+            </span>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
@@ -175,7 +181,9 @@
               class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
               ><span class="text-sm font-bold">✓</span></span
             >
-            <span> Commerce général, import-export, logistique </span>
+            <span class="text-cgray-700">
+              Commerce général, import-export, logistique
+            </span>
           </li>
         </ul>
       </div>

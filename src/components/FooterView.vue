@@ -1,7 +1,7 @@
 <template>
   <div id="footer" class="w-full">
     <section class="asFooter">
-      <div class="max-w-6xl mx-auto px-4 xl:px-0 sm:py-16 py-16">
+      <div class="max-w-6xl mx-auto px-4 xl:px-0 sm:py-16 py-16 text-cgray-600">
         <div class="grid md:grid-cols-4 w-full">
           <div class="col-span-2 sm:flex sm:justify-between">
             <div class="col-span-1">
@@ -13,7 +13,7 @@
               /></router-link>
             </div>
             <div class="col-span-1 sm:mt-0 mt-8">
-              <h3 class="font-bold">
+              <h3 class="font-bold text-cgray-900">
                 Nos réseaux sociaux <br />
                 <p class="h-1 w-6 mt-2 bg-cyellow"></p>
               </h3>
@@ -56,7 +56,7 @@
           <div class="col-span-2 sm:flex sm:justify-between sm:ml-16">
             <div class="d col-span-1 sm:ml-16 sm:mt-0 mt-8">
               <div>
-                <h3 class="font-bold">
+                <h3 class="font-bold text-cgray-900">
                   L'Entreprise <br />
                   <p class="h-1 w-6 mt-2 bg-cyellow"></p>
                 </h3>
@@ -80,7 +80,7 @@
 
             <div class="d col-span-1 md:ml-16 sm:mt-0 mt-8 hidden sm:block">
               <div>
-                <h3 class="font-bold">
+                <h3 class="font-bold text-cgray-900">
                   Infos de contact <br />
                   <p class="h-1 w-6 mt-2 bg-cyellow"></p>
                 </h3>
@@ -103,7 +103,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-cgray-100">
+    <section class="bg-cgray-100 bg-opacity-70">
       <div class="relative max-w-6xl mx-auto px-4 md:px-0 py-8">
         <div class="absolute -top-4 right-4 sm:right-0">
           <button

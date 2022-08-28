@@ -66,7 +66,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="w-5 h-5"
+                class="w-6 h-6"
               >
                 <path
                   fill-rule="evenodd"
@@ -89,7 +89,7 @@
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="w-5 h-5"
+                class="w-6 h-6"
               >
                 <path
                   fill-rule="evenodd"
@@ -116,8 +116,8 @@
           v-if="$store.state.toggleMenu"
           :class="[
             scrollPosition > 100
-              ? ' bg-white pt-3 tooglen'
-              : ' bg-cblack px-6 pt-6 pb-6 tooglen',
+              ? ' bg-white px-6 pt-6 pb-6 border-4 border-cgray-100 tooglen'
+              : ' bg-cblack px-6 pt-6 pb-6 border-4 border-cgray-800 tooglen',
 
             $store.state.toggleMenu ? '' : '',
           ]"
@@ -184,7 +184,7 @@
                           :to="service.link"
                           :key="service"
                           v-for="service in services"
-                          class="group block px-4 py-3 pr-4 text-base text-gray-700 cursor-pointer hover:bg-cgray-200 rounded-xl hover:text-gray-800"
+                          class="group block px-4 py-3 pr-4 text-base text-gray-700 cursor-pointer hover:bg-cgray-100 hover:bg-opacity-70 rounded-xl hover:text-gray-800"
                         >
                           <PopoverButton class="text-left">
                             <span class="flex items-start space-x-4">
@@ -197,7 +197,7 @@
                                 <span class="group-hover:underline">
                                   {{ service.name }}
                                 </span>
-                                <span class="text-sm font-normal text-cgray-900">
+                                <span class="text-sm font-normal text-cgray-700">
                                   {{ service.desc }}
                                 </span>
                               </span>
@@ -276,7 +276,7 @@
               <router-link
                 @click="toggleMenu()"
                 to="/contact"
-                class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-3 px-6 md:text-center md:mx-0"
+                class="sm:btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-3 px-6 md:text-center md:mx-0"
               >
                 Nous contacter
 
