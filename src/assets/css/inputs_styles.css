@@ -143,4 +143,15 @@ h1 {
 	}
 }
 
+@media (max-width: 340px) {
+	.smalls {
+		display: none;
+	}
+}
+
+@media (max-width: 540px) {
+	.flexc {
+		@apply flex justify-center items-center;
+	}
+}
 /* ... other necessary CSS omitted */

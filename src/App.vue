@@ -3,7 +3,7 @@
     <NavBar />
 
     <router-view v-slot="{ Component }">
-      <FadeInOut entry="center" exit="bottom" :duration="100" mode="out-in">
+      <FadeInOut entry="center" exit="center" :duration="200" mode="out-in">
         <div class="gs_reveal" :key="$route.path">
           <component :is="Component" />
         </div>

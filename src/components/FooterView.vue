@@ -9,7 +9,7 @@
                 ><img
                   src="../assets/logo.png"
                   alt="IRAGI SOLUTIONS"
-                  class="-mt-4 w-[100px] sm:w-[100px]"
+                  class="-mt-4 w-[90px] sm:w-[100px] saturate-50 opacity-50"
               /></router-link>
             </div>
             <div class="col-span-1 sm:mt-0 mt-8">
