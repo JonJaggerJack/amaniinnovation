@@ -1,21 +1,30 @@
 <template>
   <div class="relative">
     <NavBar />
-    <router-view />
+
+    <router-view v-slot="{ Component }">
+      <FadeInOut entry="center" exit="bottom" :duration="100" mode="out-in">
+        <div class="gs_reveal" :key="$route.path">
+          <component :is="Component" />
+        </div>
+      </FadeInOut>
+    </router-view>
     <FooterView />
   </div>
 </template>
 
 <script>
+import { defineComponent } from "vue";
+import { FadeInOut } from "vue3-transitions";
 import { VueScreenSizeMixin } from "vue-screen-size";
 import NavBar from "./components/NavBar.vue";
 import FooterView from "./components/FooterView.vue";
 import { provide } from "vue";
 import store from "./store";
 
-export default {
+export default defineComponent({
   name: "App",
-  components: { NavBar, FooterView },
+  components: { NavBar, FooterView, FadeInOut },
   mixins: [VueScreenSizeMixin],
 
   methods: {
@@ -33,19 +42,17 @@ export default {
   beforeMount() {
     this.handleScreen();
     window.addEventListener("resize", this.handleScreen);
-    window.addEventListener("scroll", this.handleScreen);
-    window.addEventListener("mouseover", this.handleScreen);
+    // window.addEventListener("scroll", this.handleScreen);
   },
 
   unmounted() {
     this.handleScreen();
     window.removeEventListener("resize", this.handleScreen);
-    window.removeEventListener("scroll", this.handleScreen);
-    window.removeEventListener("mouseover", this.handleScreen);
+    // window.removeEventListener("scroll", this.handleScreen);
   },
   setup() {
     provide("store", store);
     return {};
   },
-};
+});
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div id="footer--section" class="w-full">
+  <div id="footer" class="w-full">
     <section class="asFooter">
       <div class="max-w-6xl mx-auto px-4 md:px-0 sm:py-16 py-16">
         <div class="grid md:grid-cols-4 w-full">

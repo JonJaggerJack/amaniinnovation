@@ -177,7 +177,6 @@
                         class="tooltip-top transform rotate-180 shadow-cblack shadow-2xl"
                       ></div>
                       <div
-                        @click="open = !open"
                         class="text-left customShadow absolute left-0 z-30 w-full p-1 sm:p-3 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:left-1/2 lg:-ml-48 md:w-96 rounded-xl"
                       >
                         <router-link
@@ -187,21 +186,23 @@
                           v-for="service in services"
                           class="group block px-4 py-3 pr-4 text-base text-gray-700 cursor-pointer hover:bg-cgray-200 rounded-xl hover:text-gray-800"
                         >
-                          <span class="flex items-start space-x-4">
-                            <component
-                              :is="service.icon"
-                              class="flex-shrink-0 mt-1 text-blue-500 text-cgreen w-6 h-6 md:w-9 md:h-9"
-                              aria-hidden="true"
-                            />
-                            <span class="flex flex-col space-y-2">
-                              <span class="group-hover:underline">
-                                {{ service.name }}
-                              </span>
-                              <span class="text-sm font-normal text-cgray-900">
-                                {{ service.desc }}
+                          <PopoverButton class="text-left">
+                            <span class="flex items-start space-x-4">
+                              <component
+                                :is="service.icon"
+                                class="flex-shrink-0 mt-1 text-blue-500 text-cgreen w-6 h-6 md:w-9 md:h-9"
+                                aria-hidden="true"
+                              />
+                              <span class="flex flex-col space-y-2">
+                                <span class="group-hover:underline">
+                                  {{ service.name }}
+                                </span>
+                                <span class="text-sm font-normal text-cgray-900">
+                                  {{ service.desc }}
+                                </span>
                               </span>
                             </span>
-                          </span>
+                          </PopoverButton>
                         </router-link>
                       </div>
                     </div>
@@ -243,7 +244,7 @@
                   <PopoverPanel>
                     <div class="relative">
                       <div class="tooltip-top transform rotate-180 customShadow"></div>
-                      <Popover
+                      <div
                         class="customShadow absolute left-0 z-30 w-full p-2 mt-6 -ml-0 space-y-2 overflow-hidden transform bg-white lg:-ml-24 lg:left-1/2 md:w-48 rounded-xl"
                       >
                         <router-link
@@ -251,16 +252,16 @@
                           to="/faq"
                           class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
                         >
-                          FAQ
+                          <PopoverButton class="text-left"> FAQ </PopoverButton>
                         </router-link>
                         <router-link
                           @click="toggleMenu()"
                           to="/blog"
                           class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
                         >
-                          Notre blog
+                          <PopoverButton class="text-left"> Notre blog </PopoverButton>
                         </router-link>
-                      </Popover>
+                      </div>
                     </div>
                   </PopoverPanel>
                 </transition>
@@ -271,7 +272,7 @@
           <div
             class="flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
           >
-            <Popover class="-z-10 md:transform md:hover:scale-[0.97]">
+            <div class="-z-10 md:transform md:hover:scale-[0.97]">
               <router-link
                 @click="toggleMenu()"
                 to="/contact"
@@ -294,7 +295,7 @@
                   />
                 </svg>
               </router-link>
-            </Popover>
+            </div>
           </div>
         </div>
       </nav>
@@ -340,7 +341,7 @@ export default {
       // console.log(store.state.scrollPosition, event);
     }
 
-    async function toggleMenu() {
+    function toggleMenu() {
       if (store.state.windowsW < 770) {
         store.state.toggleMenu = !store.state.toggleMenu;
       }

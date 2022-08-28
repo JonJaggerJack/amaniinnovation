@@ -1,6 +1,9 @@
 <template>
   <!-- Section 1 -->
-  <section class="w-full bg-gradient-to-b from-cblack via-cblack to-[#335660] text-white">
+  <section
+    id="services"
+    class="w-full bg-gradient-to-b from-cblack via-cblack to-[#335660] text-white"
+  >
     <div class="mx-auto max-w-6xl px-4 sm:px-0 py-16 sm:py-20">
       <p class="text-center text-sm font-semibold tracking-wide uppercase text-cgreen">
         Produits & services

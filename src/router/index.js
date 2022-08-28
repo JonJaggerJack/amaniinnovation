@@ -46,7 +46,21 @@ const routes = [
 
 const router = createRouter({
 	history: createWebHistory(process.env.BASE_URL),
-	routes
+	routes,
+	scrollBehavior(to, from, savedPosition) {
+		// eslint-disable-next-line no-unused-vars
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				if (to.hash) {
+					return resolve({ el: to.hash, behavior: "smooth", top: savedPosition + 81 });
+				} else if (savedPosition) {
+					return resolve(savedPosition);
+				} else {
+					resolve(document.getElementById("app").scrollIntoView({ behavior: "smooth" }));
+				}
+			}, 300);
+		});
+	}
 });
 
 export default router;
