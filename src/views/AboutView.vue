@@ -13,7 +13,7 @@
         ></div>
       </div>
       <div
-        class="relative z-20 flex items-center justify-center max-w-6xl px-4 xl:px-0 py-20 mx-auto md:justify-start md:py-32"
+        class="relative z-20 flex items-center justify-center max-w-6xl px-4 xl:px-0 py-16 mx-auto md:justify-start md:py-24"
       >
         <div class="mt-32 relative z-20 flex flex-col items-start max-w-xl space-y-8">
           <p class="text-xs font-semibold tracking-wide uppercase text-cgreen w-full">
@@ -82,5 +82,18 @@
         </div>
       </div>
     </section>
+    <AboutS1 />
   </div>
 </template>
+
+<script>
+import AboutS1 from "./sections/AboutS1.vue";
+
+export default {
+  name: "AboutView",
+  components: {
+    AboutS1,
+  },
+  setup() {},
+};
+</script>

@@ -60,14 +60,32 @@
           </li>
         </ul>
 
-        <div>
+        <div class="mt-8">
           <button class="transform hover:scale-[0.97]">
-            <router-link
+            <!-- <router-link
               :to="{ hash: '#services' }"
               class="inline-block hover:underline px-5 py-3 mt-8 text-sm text-white bg-cblack rounded-md hover:bg-gray-800 ring-2 ring-transparent hover:ring-2 hover:ring-offset-2 hover:ring-cblack border-transparent"
             >
               <span class="font-medium">Decouvrez nos services</span> -
               <span class="font-light opacity-50">ici</span>
+            </router-link> -->
+
+            <router-link
+              :to="{ hash: '#services' }"
+              class="flex items-center text-base font-bold"
+            >
+              <span class="border-b-2 border-black">Découvrez nos services</span>
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="h-6 ml-3 mt-1.5 transform rotate-45 opacity-50"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </router-link>
           </button>
         </div>

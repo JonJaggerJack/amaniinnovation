@@ -154,4 +154,17 @@ h1 {
 		@apply flex justify-center items-center;
 	}
 }
+
+mark {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+	background-size: 100% 8px;
+	background-image: url(./bg/large-brush-heading.svg);
+	color: inherit;
+	font-family: Caveat, cursive;
+	/* font-size: 145%; */
+	white-space: nowrap;
+}
+
 /* ... other necessary CSS omitted */
