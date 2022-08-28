@@ -83,16 +83,19 @@
       </div>
     </section>
     <AboutS1 />
+    <AboutS2 />
   </div>
 </template>
 
 <script>
 import AboutS1 from "./sections/AboutS1.vue";
+import AboutS2 from "./sections/AboutS2.vue";
 
 export default {
   name: "AboutView",
   components: {
     AboutS1,
+    AboutS2,
   },
   setup() {},
 };

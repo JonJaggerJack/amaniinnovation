@@ -1,14 +1,16 @@
 <template>
   <div class="relative">
     <NavBar />
+    <div class="min-h-screen">
+      <router-view v-slot="{ Component }">
+        <FadeInOut entry="center" exit="center" :duration="200" mode="out-in">
+          <div class="gs_reveal" :key="$route.path">
+            <component :is="Component" />
+          </div>
+        </FadeInOut>
+      </router-view>
+    </div>
 
-    <router-view v-slot="{ Component }">
-      <FadeInOut entry="center" exit="center" :duration="200" mode="out-in">
-        <div class="gs_reveal" :key="$route.path">
-          <component :is="Component" />
-        </div>
-      </FadeInOut>
-    </router-view>
     <FooterView />
   </div>
 </template>
