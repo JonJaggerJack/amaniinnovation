@@ -33,6 +33,7 @@ export default defineComponent({
     handleScreen() {
       console.log(this.$vssWidth);
       store.state.windowsW = this.$vssWidth;
+
       if (this.$vssWidth < 770) {
         store.state.toggleMenu = false;
       } else {
@@ -44,16 +45,22 @@ export default defineComponent({
   beforeMount() {
     this.handleScreen();
     window.addEventListener("resize", this.handleScreen);
-    // window.addEventListener("scroll", this.handleScreen);
+
+    // if (store.state.toggleMenu) {
+    //   window.addEventListener("scroll", this.handleScreen);
+    // }
   },
 
   unmounted() {
     this.handleScreen();
     window.removeEventListener("resize", this.handleScreen);
-    // window.removeEventListener("scroll", this.handleScreen);
+    // if (!store.state.toggleMenu) {
+    //   window.removeEventListener("scroll", this.handleScreen);
+    // }
   },
   setup() {
     provide("store", store);
+
     return {};
   },
 });

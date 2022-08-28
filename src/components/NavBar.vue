@@ -103,7 +103,7 @@
 
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div
-          v-if="$store.state.windowsW < 770 && $store.state.toggleMenu"
+          v-if="$store.state.windowsW <= 770 && $store.state.toggleMenu"
           @click="toggleMenu()"
           :class="
             scrollPosition < 100
@@ -121,7 +121,7 @@
 
             $store.state.toggleMenu ? '' : '',
           ]"
-          class="md:animate-none z-0 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
+          class="sm:border-none md:animate-none z-0 mt-6 md:mt-0 rounded-xl md:bg-transparent md:p-0 md:flex md:justify-between md:space-x-8 md:items-center"
         >
           <div
             class="left-0 z-0 items-center justify-center w-full font-semibold select-none sm:flex lg:absolute"
@@ -272,11 +272,11 @@
           <div
             class="flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
           >
-            <div class="-z-10 md:transform md:hover:scale-[0.97]">
+            <div class="-z-10 md:transform hover:scale-[0.97]">
               <router-link
                 @click="toggleMenu()"
                 to="/contact"
-                class="sm:btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-3 px-6 md:text-center md:mx-0"
+                class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-3 px-6 md:text-center md:mx-0"
               >
                 Nous contacter
 

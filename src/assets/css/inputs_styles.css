@@ -35,11 +35,11 @@ h1 {
 }
 
 .btn {
-	@apply ring-4 ring-transparent hover:ring-4 hover:ring-offset-2 hover:ring-cyellow border-cwhite;
+	@apply sm:ring-4 ring-transparent hover:ring-4 hover:ring-offset-2 sm:hover:ring-cyellow border-cwhite;
 }
 
 .btn:hover {
-	@apply ring-2 ring-cgreen;
+	@apply sm:ring-2 sm:ring-cgreen;
 }
 
 .customShadow {

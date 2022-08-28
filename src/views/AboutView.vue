@@ -46,7 +46,7 @@
           >
             <router-link
               to="/about"
-              class="ring-4 flexc ring-transparent hover:ring-cgreen border-cyellow group font-bold text-base flex w-full sm:w-auto justify-start items-center px-6 py-3 mt-8 text-cyellow bg-cgreen bg-opacity-10 rounded-md"
+              class="sm:ring-4 flexc ring-transparent hover:ring-cgreen border-cyellow group font-bold text-base flex w-full sm:w-auto justify-start items-center px-6 py-3 mt-8 text-cyellow bg-cgreen bg-opacity-10 rounded-md"
             >
               <svg
                 class="w-6 h-6 mr-3 text-cgreen opacity-50 group-hover:opacity-95"

@@ -43,7 +43,7 @@
               <button class="transform hover:scale-[0.95] flex w-auto justify-start">
                 <router-link
                   to="/about"
-                  class="btn font-bold text-base flex w-auto justify-start items-center hover:underline px-6 py-3 mt-4 sm:mt-8 text-cblack bg-cyellow rounded-md"
+                  class="btn font-bold text-base flex w-auto justify-start items-center hover:underline px-6 py-3 mt-4 sm:mt-4 text-cblack bg-cyellow rounded-md"
                 >
                   En savoir plus
 
