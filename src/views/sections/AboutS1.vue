@@ -1,8 +1,8 @@
 <template>
   <!-- Section 1 -->
   <section class="w-full bg-white xl:px-0">
-    <div class="py-16 max-w-6xl mx-auto">
-      <div class="flex flex-col px-4 xl:px-0 md:flex-row">
+    <div class="py-16 max-w-6xl mx-auto px-4 xl:px-0">
+      <div class="flex flex-col md:flex-row">
         <div class="w-full pr-5 md:w-10/12 xl:pr-12">
           <h3 class="text-2xl sm:text-3xl font-extrabold sm:leading-[2.5rem]">
             Fondée sur <mark> l’innovation</mark> dans la production et l’offre de ses
@@ -11,7 +11,7 @@
         </div>
 
         <div class="w-full mt-5 md:mt-0 md:w-4/5 md:pl-2">
-          <p class="text-base font-normal text-gray-700 md:text-lg">
+          <p class="text-md font-normal text-gray-700 md:text-lg">
             Amani Innovation se veut d’accroitre la compétitivité au sein de la province
             et de la ville de Bukavu en s’éloignant de l’amateurisme prédominant sur le
             marché bukavien obstruant le succès et le développement de la ville toute
@@ -26,12 +26,12 @@
         >
           Ils nous ont fait confiance
         </h1>
-        <p class="text-lg text-center text-gray-600 max-w-xl mx-auto">
+        <p class="text-base text-center text-gray-600 max-w-xl mx-auto">
           Nous avons été approuvés et utilisés par certaines des meilleures entreprises du
           secteur.
         </p>
         <div class="flex justify-center items-center w-full">
-          <div class="grid grid-cols-2 gap-16 py-16 px-4 mb-0 text-center lg:grid-cols-4">
+          <div class="grid grid-cols-2 gap-16 py-16 mb-0 text-center lg:grid-cols-4">
             <!--<a
               href="https://www.sighteddesign.com/"
               target="_blank"
