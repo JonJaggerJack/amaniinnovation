@@ -1,7 +1,7 @@
 <template>
   <div id="footer" class="w-full">
     <section class="asFooter">
-      <div class="max-w-6xl mx-auto px-4 md:px-0 sm:py-16 py-16">
+      <div class="max-w-6xl mx-auto px-4 xl:px-0 sm:py-16 py-16">
         <div class="grid md:grid-cols-4 w-full">
           <div class="col-span-2 sm:flex sm:justify-between">
             <div class="col-span-1">

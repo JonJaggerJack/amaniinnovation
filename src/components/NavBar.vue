@@ -276,7 +276,7 @@
               <router-link
                 @click="toggleMenu()"
                 to="/contact"
-                class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-2 px-6 md:text-center md:mx-0"
+                class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-3 px-6 md:text-center md:mx-0"
               >
                 Nous contacter
 

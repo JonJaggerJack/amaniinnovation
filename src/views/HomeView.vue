@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <section class="bg-cblack bg-[url('bg/2.jpg')] bg-cover bg-center relative">
-      <div class="absolute top-0 right-0 w-full h-full bg-cblack opacity-70"></div>
+      <div class="absolute top-0 right-0 w-full h-full bg-cblack opacity-90"></div>
 
       <div
         class="max-w-6xl py-20 md:py-24 mx-auto text-left md:text-center px-4 xl:px-0 relative"
@@ -43,7 +43,7 @@
               <button class="transform hover:scale-[0.95] flex w-auto justify-start">
                 <router-link
                   to="/about"
-                  class="btn font-bold text-base flex w-auto justify-start items-center hover:underline px-6 py-2 mt-8 text-cblack bg-cyellow rounded-md"
+                  class="btn font-bold text-base flex w-auto justify-start items-center hover:underline px-6 py-3 mt-8 text-cblack bg-cyellow rounded-md"
                 >
                   En savoir plus
 

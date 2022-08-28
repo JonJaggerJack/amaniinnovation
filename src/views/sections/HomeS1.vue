@@ -7,7 +7,7 @@
       <div
         class="relative w-full mb-10 lg:text-left sm:text-center lg:w-1/2 xl:w-7/12 lg:mb-0"
       >
-        <p class="text-sm font-semibold tracking-wide uppercase text-cgreen">
+        <p class="text-xs font-semibold tracking-wide uppercase text-cgreen">
           Objectif & vision
         </p>
         <h2 class="text-3xl font-black sm:text-5xl mt-7 sm:leading-tight">
@@ -67,7 +67,7 @@
               class="inline-block hover:underline px-5 py-3 mt-8 text-sm text-white bg-cblack rounded-md hover:bg-gray-800 ring-2 ring-transparent hover:ring-2 hover:ring-offset-2 hover:ring-cblack border-transparent"
             >
               <span class="font-medium">Decouvrez nos services</span> -
-              <span class="font-light">ici</span>
+              <span class="font-light opacity-50">ici</span>
             </router-link>
           </button>
         </div>
