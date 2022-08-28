@@ -137,7 +137,8 @@
                   'py-3 md:mt-0 -mt-8 hover:text-cyellow hover:underline',
                 ]"
                 href="#_"
-                >À propos</router-link
+              >
+                <span class="_link"> À propos de nous</span></router-link
               >
 
               <Popover v-slot="{ open }" class="py-3 z-50">
@@ -150,8 +151,12 @@
                       scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
                       'hover:underline',
                       open ? 'text-cyellow underline' : '',
+
+                      currentRoute == 'aquagl' || currentRoute == 'logistics'
+                        ? 'underline'
+                        : '',
                     ]"
-                    >Services</span
+                    >Produits & Services</span
                   >
                   <ChevronDownIcon
                     :class="[
@@ -194,7 +199,7 @@
                                 aria-hidden="true"
                               />
                               <span class="flex flex-col space-y-2">
-                                <span class="group-hover:underline">
+                                <span class="group-hover:underline _link">
                                   {{ service.name }}
                                 </span>
                                 <span class="text-sm font-normal text-cgray-700">
@@ -210,7 +215,7 @@
                 </transition>
               </Popover>
 
-              <Popover v-slot="{ open }" class="py-3 z-30">
+              <!-- <Popover v-slot="{ open }" class="py-3 z-30">
                 <PopoverButton
                   :class="open ? '' : 'text-opacity-90'"
                   class="flex items-center space-x-1 text-cwhite hover:text-cyellow cursor-pointer lg:space-x-3 focus:outline-none"
@@ -252,20 +257,22 @@
                           to="/faq"
                           class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
                         >
-                          <PopoverButton class="text-left"> FAQ </PopoverButton>
+                          <PopoverButton class="text-left _link"> FAQ </PopoverButton>
                         </router-link>
                         <router-link
                           @click="toggleMenu()"
                           to="/blog"
                           class="hover:bg-cgray-200 hover:underline block px-4 py-3 text-sm text-gray-700 capitalize hover:bg-gray-50 rounded-xl hover:text-gray-800"
                         >
-                          <PopoverButton class="text-left"> Notre blog </PopoverButton>
+                          <PopoverButton class="text-left _link">
+                            Notre blog
+                          </PopoverButton>
                         </router-link>
                       </div>
                     </div>
                   </PopoverPanel>
                 </transition>
-              </Popover>
+              </Popover> -->
             </div>
           </div>
 
@@ -278,7 +285,7 @@
                 to="/contact"
                 class="btn group whitespace-nowrap flex justify-center items-center w-auto text-base font-bold leading-5 text-left text-cblack capitalize bg-cyellow rounded-md md:text-md py-3 px-6 md:text-center md:mx-0"
               >
-                Nous contacter
+                <span class="_linksp"> Nous contacter </span>
 
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -304,7 +311,8 @@
 </template>
 
 <script>
-import { ref, inject, onBeforeMount, onUnmounted } from "vue";
+import { useRoute } from "vue-router";
+import { ref, inject, onBeforeMount, onUnmounted, computed } from "vue";
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 import { ChevronDownIcon, OfficeBuildingIcon, TruckIcon } from "@heroicons/vue/solid";
 
@@ -354,6 +362,12 @@ export default {
     onUnmounted(() => {
       window.removeEventListener("scroll", handleScroll);
     });
+
+    const currentRoute = computed(() => {
+      return useRoute().name;
+    });
+
+    console.log(currentRoute.value);
     return {
       mobile,
       isOpen,
@@ -361,6 +375,7 @@ export default {
       handleScroll,
       scrollPosition,
       toggleMenu,
+      currentRoute,
     };
   },
 };

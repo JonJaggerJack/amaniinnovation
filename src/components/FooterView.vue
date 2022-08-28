@@ -62,17 +62,20 @@
                 </h3>
                 <ul class="mt-4 space-y-2.5">
                   <li>
-                    <router-link to="/about" class="cnav--ul__li">A propos</router-link>
+                    <router-link to="/about" class="cnav--ul__li">
+                      <span class="_linksp"> A propos de nous</span>
+                    </router-link>
                   </li>
 
-                  <li><router-link to="/faq" class="cnav--ul__li">FAQ</router-link></li>
                   <li>
-                    <router-link
-                      to="/blog"
-                      class="router-link-active router-link-exact-active cnav--ul__li"
-                      aria-current="page"
-                      >Notre Blog</router-link
-                    >
+                    <router-link to="/services/logistics" class="cnav--ul__li">
+                      <span class="_linksp"> Aqua GL </span>
+                    </router-link>
+                  </li>
+                  <li>
+                    <router-link to="/services/logistics" class="" aria-current="page">
+                      <span class="_linksp"> Amani Logistics </span>
+                    </router-link>
                   </li>
                 </ul>
               </div>

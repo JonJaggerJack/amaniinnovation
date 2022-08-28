@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.router-link-exact-active ._linksp {
+	text-decoration: underline !important;
+}
+
+.router-link-exact-active ._link {
+	text-decoration: underline !important;
+	@apply font-extrabold;
+}
 body,
 html {
 	@apply font-reg text-cblack;
@@ -152,6 +160,23 @@ h1 {
 @media (max-width: 540px) {
 	.flexc {
 		@apply flex justify-center items-center;
+	}
+}
+
+.tooglea {
+	overflow: hidden;
+	animation: toogleAcc 0.5s ease-in-out;
+	-webkit-animation: toogleAcc 0.5s ease-in-out;
+}
+
+@keyframes toogleAcc {
+	from {
+		opacity: 0;
+		height: 0px !important;
+	}
+	to {
+		opacity: 1;
+		height: auto !important;
 	}
 }
 
