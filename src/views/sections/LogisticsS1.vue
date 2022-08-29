@@ -7,7 +7,7 @@
         congolaises et africaines
       </h2>
 
-      <p class="text-lg mt-6">
+      <p class="text-lg mt-6 text-cgray-800">
         Pour livrer les marchandises directement aux entrepôts des entreprises clientes
         sous vigilance d’un personnel expert qui grâce au système satellite GPS, est
         capable de surveiller, tracer, et communiquer avec nos chauffeurs 24h⁄24

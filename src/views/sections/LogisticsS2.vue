@@ -1,9 +1,9 @@
 <template>
-  <section class="w-full px-4 py-16 bg-cblack text-white xl:px-0">
-    <div class="max-w-2xl mx-auto tracking-tighter">
+  <section class="w-full pb-0 overflow-hidden xl:pb-16 sm:py-16 bg-cblack text-white ">
+    <div class="px-4 xl:px-0 max-w-2xl mx-auto tracking-tighter">
       <h2 class="text-2xl sm:text-3xl font-extrabold sm:leading-[2.5rem]">
         De Dar-es-Salam vers toute la région de la communauté des
-        <mark class="mark2">Etats de l’Afrique de l’Est</mark> .
+        <mark class="mark2">Etats de l’Afrique de l’Est</mark>.
       </h2>
 
       <div class="mt-8">
@@ -13,17 +13,51 @@
         </p>
 
         <p class="mt-10">
-          Déclaration au port de dar-es-Salam des camions, voitures, conteneurs, etc…
-          Transport des conteneurs Transport de carburants Transport de cargaisons
-          surdimensionnées Suivi, traçage, et localisation de cargaisons Escorte et
-          sécurisation des cargaisons Consultance en logistique : conception de service
-          logistique personnalisé, conseil et recommandation
+          
+
+           <ul class="relative max-w-2xl mx-auto lg:mx-0">
+          <li class="flex pl-10 sm:pl-12 mt-5">
+            <svg
+              class="absolute left-0 w-6 h-6 sm:h-8 sm:w-8 text-cgreen"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="text-md text-cgray-300"
+              ><span class="font-bold text-cgray-300">Déclaration </span> au port de dar-es-Salam des camions, voitures, conteneurs, etc… <span class="font-bold text-cgray-800">Transport</span>  des conteneurs, de carburants, de cargaisons surdimensionnées</span
+            >
+          </li>
+
+          <li class="flex pl-10 sm:pl-12 mt-5">
+            <svg
+              class="absolute left-0 w-6 h-6 sm:h-8 sm:w-8 text-cgreen"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+            <span class="text-md text-cgray-700"
+              ><span class="font-bold text-cgray-800">Suivie</span>, traçage, et localisation de cargaisons Escorte et sécurisation des cargaisons.   <span class="font-bold text-cgray-800">Consultance</span>  en logistique : conception de service logistique personnalisé, conseil et recommandation</span
+            >
+          </li>
+        </ul>
         </p>
       </div>
 
       <div class="mt-8 cursor-grabbing">
         <div class="mb-8">
-          <h2 class="text-2xl font-extrabold">Nos itinéraires</h2>
+          <h2 class="text-2xl font-extrabold">Nos itinéraires :</h2>
         </div>
         <Carousel
           :transition="750"
@@ -62,11 +96,11 @@
     </div>
 
     <div class="w-full mt-16 sm:mb-6 mx-auto bg-opacity-5 p-0 sm:p-0">
-      <aside class="max-w-2xl mx-auto">
-        <div class="py-0 mx-auto max-w-screen-2xl sm:px-0">
-          <div class="grid grid-cols-1 sm:gap-4 md:grid-cols-3 space-y-4 sm:space-y-0">
+      <aside class="max-w-2xl  mx-auto">
+        <div class=" py-0 mx-auto max-w-screen-2xl sm:px-0">
+          <div class=" grid grid-cols-1 xl:gap-4 md:grid-cols-3 space-y-4 sm:space-y-0">
             <div
-              class="w-full relative p-8 col-span-2 bg-cgreen rounded-xl sm:p-16 lg:px-16"
+              class="px-4 mx-4 xl:mx-0 xl:mr-4 xl:w-full relative p-8 col-span-2 bg-cgreen rounded-xl sm:p-16 lg:px-16"
             >
               <div class="-z-0 absolute top-4 sm:top-8 left-16 sm:left-8 opacity-20">
                 <svg
@@ -86,7 +120,7 @@
               </div>
               <div class="z-40 max-w-xl mx-auto text-center">
                 <h2 class="text-2xl font-black text-cblack md:text-3xl">
-                  Franchissez le pas <mark class="mark1">avec nous</mark>
+                  Franchissez le pas <br class="sm:hidden block"> <mark class="mark1">avec nous</mark>
                 </h2>
 
                 <p class="mt-6 text-cgray-800 text-base">
@@ -96,25 +130,45 @@
                 <div class="mt-6 md:mt-8">
                   <router-link
                     to="/contact"
-                    class="inline-block px-6 py-2 text-sm font-bold text-blue-500 transition bg-cblack border-4 border-cblack rounded hover:bg-transparent hover:text-cblack focus:outline-none focus:ring focus:ring-cyellow"
+                    class="max-w-[200px] mx-auto flex justify-center items-center px-6 py-2 text-sm font-bold text-blue-500 transition bg-cblack border-4 border-cblack rounded hover:bg-transparent hover:text-cblack focus:outline-none focus:ring focus:ring-cyellow"
                   >
-                    Nous contacter
+                <span class="_linksp"> Nous contacter </span>
+
+                     <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-4 h-4 ml-2 opacity-50 group-hover:opacity-95"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                  />
+                </svg>
                   </router-link>
                 </div>
               </div>
             </div>
 
-            <div
-              class="relative col-span-1 grid grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-1"
+            <div class="xl:static h-full">
+                <div
+              class="relative  h-full col-span-1 grid grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-1"
             >
               <div
-                class="absolute left-0 right-0 h-full w-full bg-cblack bg-opacity-50"
+                class="z-10 absolute md:left-0 sm:right-0 h-full w-full bg-cblack bg-opacity-50"
               ></div>
+              <div
+            class="z-10 block xl:hidden absolute top-0 sm:left-0 sm:right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
+          ></div>
               <img
                 alt="#"
                 src="/assets/img/content/7.jpg"
-                class="object-cover w-full h-40 rounded-xl sm:h-56 md:h-full"
+                class="transform -z-0  sm:transform-none object-cover w-full h-40 rounded-none sm:rounded-xl sm:h-56 md:h-full"
               />
+            </div>
             </div>
           </div>
         </div>
