@@ -34,7 +34,7 @@
           leave-to="opacity-0 h-0 overflow-y-hidden"
         >
           <DisclosurePanel
-            class="relative px-6 sm:px-6 mt-6 sm:mt-6 mb-0 sm:mb-0 text-base text-cgray-500"
+            class="relative px-6 sm:px-6 mt-6 sm:mt-6 mb-0 sm:mb-0 text-base text-cgray-300"
           >
             <div
               class="absolute left-0 h-full w-1 rounded-md bg-cgray-100 bg-opacity-10"
@@ -71,7 +71,8 @@
               </div>
               <div class="z-40 max-w-xl mx-auto text-center">
                 <h2 class="text-2xl font-black text-cblack md:text-3xl">
-                  Franchissez le pas <mark class="mark1">avec nous</mark>
+                  Franchissez le pas <br class="sm:hidden block" />
+                  <mark class="mark1">avec nous</mark>
                 </h2>
 
                 <p class="mt-6 text-cgray-800 text-base">
@@ -96,13 +97,13 @@
                 class="absolute left-0 right-0 h-full w-full bg-cblack bg-opacity-50"
               ></div>
               <div
-                class="block absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
+                class="hidden sm:hidden absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
               ></div>
 
               <img
                 alt="#"
                 src="/assets/img/content/6.jpg"
-                class="object-cover w-full h-40 rounded-xl sm:h-56 md:h-full"
+                class="hidden sm:block object-cover w-full h-40 rounded-xl sm:h-56 md:h-full"
               />
             </div>
           </div>

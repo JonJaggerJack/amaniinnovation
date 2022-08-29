@@ -15,8 +15,15 @@
 body,
 html {
 	@apply font-reg text-cblack;
-	overflow-x: hidden;
 }
+/* 
+@media only screen and (min-width: 1550px) {
+	body {
+		-moz-transform: scale(1.1, 1.1);
+		zoom: 1.1;
+		zoom: 120%;
+	}
+} */
 
 * {
 	@apply transition-all duration-300 ease-in-out;
@@ -198,11 +205,11 @@ mark {
 }
 
 .mark1 {
-	@apply bg-gradient-to-l from-transparent via-cyellow to-transparent;
+	@apply bg-gradient-to-l from-[#fff0] via-cyellow to-[#fff0];
 }
 
 .mark2 {
-	@apply bg-gradient-to-l from-transparent via-cgreen to-transparent;
+	@apply bg-gradient-to-l from-[#fff0] via-cgreen to-[#fff0];
 }
 
 /* ... other necessary CSS omitted */

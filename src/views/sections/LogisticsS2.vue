@@ -29,8 +29,8 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span class="text-md text-cgray-300"
-              ><span class="font-bold text-cgray-300">Déclaration </span> au port de dar-es-Salam des camions, voitures, conteneurs, etc… <span class="font-bold text-cgray-800">Transport</span>  des conteneurs, de carburants, de cargaisons surdimensionnées</span
+            <span class="text-md text-cgray-400"
+              ><span class="font-bold text-cgray-300">Déclaration </span> au port de dar-es-Salam des camions, voitures, conteneurs, etc… <span class="font-bold text-cgray-300">Transport</span>  des conteneurs, de carburants, de cargaisons surdimensionnées</span
             >
           </li>
 
@@ -47,8 +47,8 @@
                 clip-rule="evenodd"
               ></path>
             </svg>
-            <span class="text-md text-cgray-700"
-              ><span class="font-bold text-cgray-800">Suivie</span>, traçage, et localisation de cargaisons Escorte et sécurisation des cargaisons.   <span class="font-bold text-cgray-800">Consultance</span>  en logistique : conception de service logistique personnalisé, conseil et recommandation</span
+            <span class="text-md text-cgray-400"
+              ><span class="font-bold text-cgray-300">Suivie</span>, traçage, et localisation de cargaisons Escorte et sécurisation des cargaisons.   <span class="font-bold text-cgray-300">Consultance</span>  en logistique : conception de service logistique personnalisé, conseil et recommandation</span
             >
           </li>
         </ul>
@@ -71,7 +71,7 @@
             <div
               class="text-sm carousel__item sm:w-[150px] py-3 px-5 font-bold overflow-hidden rounded-md bg-cgray-100 bg-opacity-5"
             >
-              {{ ville.n }}
+              <span class=" overflow-x-hidden">{{ ville.n }}</span>
             </div>
           </Slide>
         </Carousel>
@@ -160,13 +160,13 @@
                 class="absolute left-0 right-0 h-full w-full bg-cblack bg-opacity-50"
               ></div>
               <div
-            class="block absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
+            class="sm:hidden hidden absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
           ></div>
          
               <img
                 alt="#"
                 src="/assets/img/content/7.jpg"
-                class="object-cover w-full  h-40 rounded-xl sm:h-56 md:h-full"
+                class="hidden sm:block object-cover w-full  h-40 rounded-xl sm:h-56 md:h-full"
               />
             </div>
           </div>
