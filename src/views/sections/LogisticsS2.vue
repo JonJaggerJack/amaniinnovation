@@ -160,7 +160,7 @@
                 class="absolute left-0 right-0 h-full w-full bg-cblack bg-opacity-50"
               ></div>
               <div
-            class="block sm:hidden absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
+            class="block absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
           ></div>
          
               <img
