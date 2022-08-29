@@ -105,7 +105,7 @@
         <div class="mt-8">
           <button class="transform hover:scale-[0.97]">
             <router-link
-              :to="{ hash: '#aquagl' }"
+              :to="{ hash: '#logistics' }"
               class="flex items-center text-base font-bold"
             >
               <span class="border-b-2 border-black">Plus d'info</span>
@@ -135,12 +135,18 @@
         />
       </div>
     </section>
+    <LogisticsS1 />
+    <LogisticsS2 />
   </div>
 </template>
 
 <script>
+import LogisticsS1 from "@/views/sections/LogisticsS1.vue";
+import LogisticsS2 from "@/views/sections/LogisticsS2.vue";
+
 export default {
   name: "LogisticsView",
+  components: { LogisticsS1, LogisticsS2 },
   setup() {},
 };
 </script>

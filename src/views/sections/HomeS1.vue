@@ -10,8 +10,9 @@
         <p class="text-xs font-semibold tracking-wide uppercase text-cgreen">
           Objectif & vision
         </p>
-        <h2 class="text-3xl font-black sm:text-5xl mt-7 sm:leading-tight">
-          Oeuvrer dans des secteurs à impact rapide et intégrateurs
+        <h2 class="text-3xl font-black sm:text-4xl mt-7 sm:leading-tight">
+          Oeuvrer dans des secteurs à
+          <mark class="mark1"> impact rapide et intégrateurs</mark>
         </h2>
         <p class="text-cgray-800 text-lg lg:max-w-2xl mt-9 mb-8">
           Prenant conscience du chômage élevé exacerbant le niveau de pauvreté en Afrique

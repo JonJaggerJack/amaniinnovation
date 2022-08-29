@@ -5,8 +5,8 @@
       <div class="flex flex-col md:flex-row">
         <div class="w-full pr-5 md:w-10/12 xl:pr-12">
           <h3 class="text-2xl sm:text-3xl font-extrabold sm:leading-[2.5rem]">
-            Fondée sur <mark> l’innovation</mark> dans la production et l’offre de ses
-            services
+            Fondée sur <mark class="mark1"> l’innovation</mark> dans la production et
+            l’offre de ses services
           </h3>
         </div>
 

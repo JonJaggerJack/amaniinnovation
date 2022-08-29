@@ -9,7 +9,7 @@
     </div>
 
     <div class="max-w-2xl mx-auto bg-opacity-5 p-0 sm:p-0 space-y-8">
-      <Disclosure
+      <DisclosureD
         as="div"
         v-slot="{ open }"
         :key="question"
@@ -43,7 +43,7 @@
             {{ question.r }}
           </DisclosurePanel>
         </TransitionRoot>
-      </Disclosure>
+      </DisclosureD>
     </div>
 
     <div class="w-full mt-16 sm:mb-12 mx-auto bg-opacity-5 p-0 sm:p-0">
@@ -71,7 +71,7 @@
               </div>
               <div class="z-40 max-w-xl mx-auto text-center">
                 <h2 class="text-2xl font-black text-cblack md:text-3xl">
-                  Franchissez le pas <mark>avec nous</mark>
+                  Franchissez le pas <mark class="mark1">avec nous</mark>
                 </h2>
 
                 <p class="mt-6 text-cgray-800 text-base">
@@ -110,21 +110,12 @@
 
 <script>
 import { ref } from "vue";
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  TransitionRoot,
-} from "@headlessui/vue";
+
 import { ChevronUpIcon } from "@heroicons/vue/solid";
 export default {
   name: "AquaGLS2",
   components: {
-    Disclosure,
-    DisclosureButton,
-    DisclosurePanel,
     ChevronUpIcon,
-    TransitionRoot,
   },
 
   setup() {

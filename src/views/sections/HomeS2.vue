@@ -8,7 +8,7 @@
       <p class="text-center text-xs font-semibold tracking-wide uppercase text-cgreen">
         Produits & services
       </p>
-      <h2 class="text-center text-2xl font-black sm:text-5xl mt-7 sm:leading-tight">
+      <h2 class="text-center text-3xl font-black sm:text-4xl mt-7 sm:leading-tight">
         Nos produits et services
       </h2>
       <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-8 sm:pt-12">

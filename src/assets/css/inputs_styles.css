@@ -186,12 +186,23 @@ mark {
 	background-repeat: no-repeat;
 	background-position: 100% 100%;
 	background-size: 100% 8px;
-	background-image: url(./bg/large-brush-heading.svg);
+	background-repeat: no-repeat;
+	background-size: 100% 0.3em;
+	background-position: 0 88%;
+	font-weight: inherit;
+	/* background-image: url(./bg/large-brush-heading.svg); */
 	color: inherit;
 	font-family: Neuton !important;
 	font-weight: 900;
 	font-size: 120%;
-	white-space: nowrap;
+}
+
+.mark1 {
+	@apply bg-gradient-to-l from-transparent via-cyellow to-transparent;
+}
+
+.mark2 {
+	@apply bg-gradient-to-l from-transparent via-cgreen to-transparent;
 }
 
 /* ... other necessary CSS omitted */
