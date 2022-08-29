@@ -9,10 +9,10 @@
                 ><img
                   src="../assets/logo.png"
                   alt="IRAGI SOLUTIONS"
-                  class="-mt-4 w-[90px] sm:w-[100px] saturate-50 opacity-50"
+                  class="-mt-4 w-[90px] sm:w-[100px] hidden sm:block saturate-50 opacity-50"
               /></router-link>
             </div>
-            <div class="col-span-1 sm:mt-0 mt-8">
+            <div class="col-span-1 sm:mt-0 mt-0">
               <h3 class="font-bold text-cgray-900">
                 Nos réseaux sociaux <br />
                 <p class="h-1 w-6 mt-2 bg-cyellow"></p>
@@ -21,33 +21,33 @@
                 <li>
                   <a href="http://" target="_blank" rel="noopener noreferrer"
                     ><img
-                      src="https://vincejs77.github.io/landing001/public/img/socials/insta.svg"
+                      src="/assets/img/logo/insta.svg"
                       alt=""
-                      class="w-[20px] sm:w-[20px]"
+                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
                   /></a>
                 </li>
                 <li>
                   <a href="http://" target="_blank" rel="noopener noreferrer"
                     ><img
-                      src="https://vincejs77.github.io/landing001/public/img/socials/tw.svg"
+                      src="/assets/img/logo/tw.svg"
                       alt=""
-                      class="w-[20px] sm:w-[20px]"
+                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
                   /></a>
                 </li>
                 <li>
                   <a href="http://" target="_blank" rel="noopener noreferrer"
                     ><img
-                      src="https://vincejs77.github.io/landing001/public/img/socials/fb.svg"
+                      src="/assets/img/logo/fb.svg"
                       alt=""
-                      class="w-[20px] sm:w-[20px]"
+                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
                   /></a>
                 </li>
                 <li>
                   <a href="http://" target="_blank" rel="noopener noreferrer"
                     ><img
-                      src="https://vincejs77.github.io/landing001/public/img/socials/in.svg"
+                      src="/assets/img/logo/in.svg"
                       alt=""
-                      class="w-[20px] sm:w-[20px]"
+                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
                   /></a>
                 </li>
               </ul>
@@ -68,7 +68,7 @@
                   </li>
 
                   <li>
-                    <router-link to="/services/logistics" class="cnav--ul__li">
+                    <router-link to="/services/aquagl" class="cnav--ul__li">
                       <span class="_linksp"> Aqua GL </span>
                     </router-link>
                   </li>
@@ -107,11 +107,11 @@
       </div>
     </section>
     <section class="bg-cgray-100 bg-opacity-70">
-      <div class="relative max-w-6xl mx-auto px-4 md:px-0 py-8">
+      <div class="relative max-w-6xl mx-auto px-4 xl:px-0 py-4">
         <div class="absolute -top-4 right-4 sm:right-0">
           <button
             @click="backToTop()"
-            class="text-cblack btn bg-cyellow p-2 rounded-lg animate-bounce"
+            class="text-cblack btn bg-cyellow p-1.5 sm:p-2 rounded-lg animate-bounce"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -130,8 +130,8 @@
           </button>
         </div>
         <div class="mt-0">
-          <p>
-            <span class="text- text-cgray-800 text-sm">
+          <p class="leading-5">
+            <span class="text- text-cgray-700 text-xs">
               © Copyright 2022 Amani Innovation. All Rights Reserved. Designed by
               <span class="font-bold underline text-cgreen"
                 ><a

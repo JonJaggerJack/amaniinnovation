@@ -26,7 +26,7 @@
               class="leading-6 text-left align-middle border-none w-12 h-12 sm:w-14 sm:h-14 z-10"
             />
             <div class="pl-4 sm:pl-8 leading-6 text-left">
-              <div class="box-border pb-1 text-xl font-bold mb-2">
+              <div class="box-border pb-1 text-lg font-bold mb-2">
                 Filtration naturelle
               </div>
               <div class="box-border text-md leading-normal text-cgray-700">
@@ -47,7 +47,7 @@
               class="leading-6 text-left align-middle border-none w-12 h-12 sm:w-14 sm:h-14 z-10"
             />
             <div class="pl-4 sm:pl-8 leading-6 text-left">
-              <div class="box-border pb-1 text-xl font-bold mb-2">Eau de source pure</div>
+              <div class="box-border pb-1 text-lg font-bold mb-2">Eau de source pure</div>
               <div class="box-border text-md leading-normal text-cgray-700">
                 Qui se diffuse rapidement et efficacement dans l’organisme
               </div>
@@ -65,7 +65,7 @@
               class="leading-6 text-left align-middle border-none w-12 h-12 sm:w-14 sm:h-14 z-10"
             />
             <div class="pl-4 sm:pl-8 leading-6 text-left">
-              <div class="box-border pb-1 text-xl font-bold mb-2">Composition pure</div>
+              <div class="box-border pb-1 text-lg font-bold mb-2">Composition pure</div>
               <div class="box-border text-md leading-normal text-cgray-700">
                 Légère, incolore, inodore, insipide, et sans métaux lourds
               </div>
@@ -80,11 +80,11 @@
               class="leading-6 text-left align-middle border-none w-12 h-12 sm:w-14 sm:h-14"
             />
             <div class="pl-4 sm:pl-8 leading-6 text-left">
-              <div class="box-border pb-1 text-xl font-bold mb-2">
+              <div class="box-border pb-1 text-lg font-bold mb-2">
                 Idéal et sans risque
               </div>
               <div class="box-border text-md leading-normal text-cgray-700">
-                Légère, incolore, inodore, insipide, et sans métaux lourds
+                Recommandée pour les utilisations domestiques
               </div>
             </div>
           </div>

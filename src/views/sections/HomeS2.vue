@@ -21,7 +21,7 @@
                 <img
                   src="/assets/img/content/3.png"
                   alt=""
-                  class="w-[70px] sm:w-[100px] mr-4"
+                  class="w-[70px] sm:w-[100px] mr-4 -z-0"
                 />
               </span>
             </div>
@@ -42,7 +42,7 @@
             <div class="flex items-center justify-center my-8 flex-row sm:space-x-5">
               <router-link
                 to="/services/logistics"
-                class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
+                class="z-40 flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
               >
                 <span>En savoir plus</span>
                 <svg
@@ -86,7 +86,7 @@
         </div>
         <div class="overflow-hidden text-center bg-black">
           <div class="px-0 pt-16 pb-4 md:px-5 md:py-5 relative">
-            <div class="absolute bottom-0 sm:bottom-0 left-0 opacity-5">
+            <div class="absolute bottom-0 sm:bottom-0 left-0 opacity-5 -z-0">
               <span class="text-[140px] sm:text-[220px] font-black">
                 <img
                   src="/assets/img/content/2.png"
@@ -112,7 +112,7 @@
             <div class="flex items-center justify-center my-8 flex-row sm:space-x-5">
               <router-link
                 to="/services/aquagl"
-                class="flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
+                class="z-40 flex items-center w-auto mx-auto text-md leading-tight text-center text-cyellow font-bold hover:underline sm:mx-0"
               >
                 <span>En savoir plus</span>
                 <svg

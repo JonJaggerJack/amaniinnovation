@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Neuton:wght@800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -172,11 +172,12 @@ h1 {
 @keyframes toogleAcc {
 	from {
 		opacity: 0;
-		height: 0px !important;
+		height: 1px !important;
+		overflow: hidden !important;
 	}
 	to {
 		opacity: 1;
-		height: auto !important;
+		height: 100px !important;
 	}
 }
 
@@ -187,8 +188,9 @@ mark {
 	background-size: 100% 8px;
 	background-image: url(./bg/large-brush-heading.svg);
 	color: inherit;
-	font-family: Caveat, cursive;
-	/* font-size: 145%; */
+	font-family: Neuton !important;
+	font-weight: 900;
+	font-size: 120%;
 	white-space: nowrap;
 }
 
