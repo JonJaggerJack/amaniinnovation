@@ -1,6 +1,6 @@
 <template>
-  <section class="w-full pb-0 overflow-hidden xl:pb-16 sm:py-16 bg-cblack text-white ">
-    <div class="px-4 xl:px-0 max-w-2xl mx-auto tracking-tighter">
+  <section class="w-full px-4 py-16 bg-cblack text-white xl:px-0">
+    <div class="max-w-2xl mx-auto tracking-tighter">
       <h2 class="text-2xl sm:text-3xl font-extrabold sm:leading-[2.5rem]">
         De Dar-es-Salam vers toute la région de la communauté des
         <mark class="mark2">Etats de l’Afrique de l’Est</mark>.
@@ -96,11 +96,11 @@
     </div>
 
     <div class="w-full mt-16 sm:mb-6 mx-auto bg-opacity-5 p-0 sm:p-0">
-      <aside class="max-w-2xl  mx-auto">
-        <div class=" py-0 mx-auto max-w-screen-2xl sm:px-0">
-          <div class=" grid grid-cols-1 xl:gap-4 md:grid-cols-3 space-y-4 sm:space-y-0">
+      <aside class="max-w-2xl mx-auto">
+        <div class="py-0 mx-auto max-w-screen-2xl sm:px-0">
+          <div class="grid grid-cols-1 sm:gap-4 md:grid-cols-3 space-y-4 sm:space-y-0">
             <div
-              class="px-4 mx-4 xl:mx-0 xl:mr-4 xl:w-full relative p-8 col-span-2 bg-cgreen rounded-xl sm:p-16 lg:px-16"
+              class="w-full relative p-8 col-span-2 bg-cgreen rounded-xl sm:p-16 lg:px-16"
             >
               <div class="-z-0 absolute top-4 sm:top-8 left-16 sm:left-8 opacity-20">
                 <svg
@@ -153,22 +153,21 @@
               </div>
             </div>
 
-            <div class="xl:static h-full">
-                <div
-              class="relative  h-full col-span-1 grid grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-1"
+            <div
+              class="relative col-span-1 grid grid-cols-1 sm:gap-4 md:grid-cols-1 lg:grid-cols-1"
             >
               <div
-                class="z-10 absolute md:left-0 sm:right-0 h-full w-full bg-cblack bg-opacity-50"
+                class="absolute left-0 right-0 h-full w-full bg-cblack bg-opacity-50"
               ></div>
               <div
-            class="z-10 block xl:hidden absolute top-0 sm:left-0 sm:right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
+            class="block sm:hidden absolute top-0 right-0 w-full h-full bg-gradient-to-b from-cblack to-transparent"
           ></div>
+         
               <img
                 alt="#"
                 src="/assets/img/content/7.jpg"
-                class="transform -z-0  sm:transform-none object-cover w-full h-40 rounded-none sm:rounded-xl sm:h-56 md:h-full"
+                class="object-cover w-full  h-40 rounded-xl sm:h-56 md:h-full"
               />
-            </div>
             </div>
           </div>
         </div>
