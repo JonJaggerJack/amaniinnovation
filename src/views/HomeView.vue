@@ -25,7 +25,7 @@
         </div>
         <div class="relative max-w-4xl">
           <h1
-            class="pb-2 leading-normal mt-[300px] md:mt-[300px] text-4xl font-extrabold text-left text-transparent md:text-5xl md:text-left bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
+            class="pb-2 leading-normal mt-[300px] md:mt-[300px] text-4xl font-black text-left text-transparent md:text-5xl md:text-left bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
           >
             Au-delà de vos limites
           </h1>

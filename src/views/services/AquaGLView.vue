@@ -119,16 +119,20 @@
               <span class="border-b-4 border-cgray-700 group-hover:border-cyellow"
                 >Plus d'info</span
               >
+
               <svg
-                viewBox="0 0 20 20"
-                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
                 class="h-6 ml-3 mt-1.5 transform rotate-45 opacity-50 group-hover:opacity-80"
               >
                 <path
-                  fill-rule="evenodd"
-                  d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                  clip-rule="evenodd"
-                ></path>
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267A8.25 8.25 0 1120.25 10.5M8.288 14.212A5.25 5.25 0 1117.25 10.5"
+                />
               </svg>
             </router-link>
           </button>

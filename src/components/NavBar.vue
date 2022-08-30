@@ -292,7 +292,7 @@
           <div
             class="flex-col justify-center pr--5 mt-4 space-y-8 md:pr-3 lg:pr-0 md:flex-row md:space-y-0 md:items-center md:space-x-6 md:mt-0"
           >
-            <div class="-z-10 md:transform hover:scale-[0.97]">
+            <div class="-z-10 md:transform hover:scale-[0.97] trans">
               <router-link
                 @click="toggleMenu()"
                 to="/contact"
