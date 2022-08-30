@@ -59,7 +59,7 @@
         </div>
       </div>
       <div
-        class="bg-cgray-900 overflow-hidden relative text-cwhite p-[1.5rem] sm:p-[3rem] w-full mt-16 rounded-xl"
+        class="bg-cgray-900 overflow-hidden relative text-cwhite pb-[2rem] sm:pb-0 p-[1.5rem] sm:p-[3rem] w-full mt-16 rounded-xl"
       >
         <div class="-z-0 absolute bottom-0 right-0 w-1/2 h-full">
           <div class="relative w-full h-full">
@@ -134,7 +134,7 @@
           </div>
 
           <div class="">
-            <h2 class="text-lg sm:text-xl font-bold">Nos bureau</h2>
+            <h2 class="text-lg sm:text-xl font-bold">Nos bureaux</h2>
             <ul class="mt-6 space-x-4 text-md flex justify-start">
               <li class="group">
                 <a

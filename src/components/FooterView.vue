@@ -18,7 +18,7 @@
             </span>
           </div>
         </div>
-        <div class="flex justify-start ml-4 sm:mt-0 sm:space-x-8 items-center">
+        <div class="flex justify-start ml-4 sm:mt-0 space-x-3 sm:space-x-8 items-center">
           <div class="hidden">
             <span class="text-md">Nos réseau sociaux </span>
           </div>
