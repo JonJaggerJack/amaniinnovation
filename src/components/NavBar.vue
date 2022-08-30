@@ -54,7 +54,7 @@
             <div
               :class="[
                 scrollPosition > 100
-                  ? 'sm:top-[0px] -top-[3px]'
+                  ? 'sm:-top-[10px] -top-[3px]'
                   : '-top-[3px] sm:top-[0px]',
                 'duration-100',
               ]"
