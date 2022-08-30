@@ -53,7 +53,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-span-2 sm:flex sm:justify-between sm:ml-16">
+          <div class="col-span-2 md:flex lg:justify-between sm:ml-16">
             <div class="d col-span-1 sm:ml-16 sm:mt-0 mt-8">
               <div>
                 <h3 class="font-bold text-cgray-900">
@@ -62,7 +62,7 @@
                 </h3>
                 <ul class="mt-4 space-y-2.5">
                   <li>
-                    <router-link to="/about" class="cnav--ul__li">
+                    <router-link to="/about" class="cnav--ul__li sm:whitespace-nowrap">
                       <span class="_linksp"> A propos de nous</span>
                     </router-link>
                   </li>
@@ -81,7 +81,7 @@
               </div>
             </div>
 
-            <div class="d col-span-1 md:ml-16 sm:mt-0 mt-8 hidden sm:block">
+            <div class="d col-span-1 md:ml-16 lg:ml-16 sm:mt-0 mt-8 hidden sm:block">
               <div>
                 <h3 class="font-bold text-cgray-900">
                   Infos de contact <br />

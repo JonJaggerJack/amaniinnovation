@@ -1,8 +1,16 @@
 <template>
   <div id="contact" class="contat">
-    <section class="bg-cblack py-20 sm:py-24 text-white">
-      <div class="max-w-6xl mx-auto px-4 xl:px-0">
-        <div class="mt-[300px]">
+    <section class="bg-cblack py-20 overflow-hidden sm:py-24 text-white relative">
+      <div
+        class="z-10 absolute top-0 right-0 sm:left-24 bottom-[350px] sm:bottom-0 w-full h-full bg-gradient-to-t sm:bg-gradient-to-r from-cblack via-[#fff0] top-via-[#fff0]"
+      ></div>
+      <div class="max-w-6xl mx-auto px-4 xl:px-0 relative">
+        <div
+          class="absolute z-0 w-full right-4 sm:right-0 left-4 sm:left-16 bottom-[350px] sm:top-0"
+        >
+          <img src="/assets/img/content/map/1.png" class="w-[100%] sm:w-[100%]" alt="" />
+        </div>
+        <div class="z-10 relative mt-[200px] sm:mt-[300px]">
           <div class="max max-w-lg">
             <p
               class="text-xs mb-6 font-semibold tracking-wide uppercase text-cgreen w-full"
