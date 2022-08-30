@@ -1,6 +1,7 @@
 <template>
   <div class="relative">
     <NavBar />
+
     <div class="min-h-screen">
       <router-view v-slot="{ Component }">
         <FadeInOut entry="center" exit="center" :duration="200" mode="out-in">
@@ -10,7 +11,6 @@
         </FadeInOut>
       </router-view>
     </div>
-
     <FooterView />
   </div>
 </template>
@@ -23,6 +23,8 @@ import NavBar from "./components/NavBar.vue";
 import FooterView from "./components/FooterView.vue";
 import { provide } from "vue";
 import store from "./store";
+
+import { useRoute } from "vue-router";
 
 export default defineComponent({
   name: "App",
@@ -40,6 +42,22 @@ export default defineComponent({
         store.state.toggleMenu = true;
       }
     },
+  },
+
+  mounted() {
+    this.$progress.finish();
+  },
+  created() {
+    // eslint-disable-next-line
+    this.$progress.start();
+    this.$router.beforeEach((to, from, next) => {
+      this.$progress.start();
+      next();
+    });
+    // eslint-disable-next-line
+    this.$router.afterEach((to, from) => {
+      this.$progress.finish();
+    });
   },
 
   beforeMount() {
@@ -61,7 +79,11 @@ export default defineComponent({
   setup() {
     provide("store", store);
 
-    return {};
+    const route = useRoute();
+
+    return {
+      route,
+    };
   },
 });
 </script>

@@ -25,7 +25,7 @@
                 >avec nous</span
               >
             </h1>
-            <p class="mt-12 text-cgray-300 text-lg">
+            <p class="mt-12 text-cgray-300 text-base sm:text-lg">
               Que vous soyez une personne morale ou une entreprise, et que vous ayez des
               préocupations sur nos produit et services.
             </p>

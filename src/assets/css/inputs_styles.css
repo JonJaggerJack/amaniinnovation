@@ -14,14 +14,13 @@
 }
 body,
 html {
-	@apply font-reg text-cblack;
-	font-size-adjust: inherit;
+	@apply font-reg text-cblack overflow-x-hidden;
 }
-
 @media only screen and (min-width: 1550px) {
 	body,
 	html {
 		font-size: 115% !important;
+		font-size-adjust: inherit;
 	}
 	mark {
 		font-size: 130% !important;
@@ -44,9 +43,17 @@ html {
 	.-h {
 		height: 80px !important;
 	}
+
+	.-p {
+		top: 10px !important;
+	}
 }
 
-* {
+div,
+a,
+button,
+li,
+svg {
 	@apply transition-all duration-300 ease-in-out;
 }
 
@@ -234,3 +241,80 @@ mark {
 }
 
 /* ... other necessary CSS omitted */
+
+.vue3-progress {
+	color: #f7da33 !important;
+}
+
+.vue3-progress,
+.vue3-progress:before,
+.vue3-progress:after {
+	border-radius: 50% !important;
+	width: 1.5em !important;
+	height: 1.5em !important;
+	z-index: 99999999 !important;
+	-webkit-border-radius: 50% !important;
+	-moz-border-radius: 50% !important;
+	-ms-border-radius: 50% !important;
+	-o-border-radius: 50% !important;
+}
+
+.vue3-progress,
+.vue3-progress:before,
+.vue3-progress:after {
+	-webkit-animation-fill-mode: both !important;
+	animation-fill-mode: both !important;
+	-webkit-animation: load7 1.8s infinite ease-in-out !important;
+	animation: load7 1.8s infinite ease-in-out !important;
+}
+.vue3-progress {
+	color: #f7da33;
+	font-size: 10px;
+	position: relative !important;
+	top: -10px !important;
+	left: calc(50% - 30px) !important;
+	right: 0 !important;
+	text-indent: -9999em;
+	/* -webkit-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	transform: translateZ(0); */
+	-webkit-animation-delay: -0.16s !important;
+	animation-delay: -0.16s !important;
+}
+.vue3-progress:before,
+.vue3-progress:after {
+	content: "";
+	position: absolute;
+	z-index: 99999999 !important;
+	top: 0;
+	font-size: 10px;
+}
+.vue3-progress:before {
+	font-size: 10px !important;
+	left: -2em !important;
+	-webkit-animation-delay: -0.32s !important;
+	animation-delay: -0.32s !important;
+}
+.vue3-progress:after {
+	left: 2em !important;
+}
+@-webkit-keyframes load7 {
+	0%,
+	80%,
+	100% {
+		box-shadow: 0 2.5em 0 -1.3em;
+	}
+	40% {
+		box-shadow: 0 2.5em 0 0;
+	}
+}
+@keyframes load7 {
+	0%,
+	80%,
+	100% {
+		box-shadow: 0 2.5em 0 -1.3em;
+	}
+	40% {
+		box-shadow: 0 2.5em 0 0;
+	}
+}

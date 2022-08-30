@@ -8293,6 +8293,11 @@ vue3-carousel@^0.1.46:
   resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.46.tgz#173ede857f7e6321f2acd7cb4de384436c690b33"
   integrity sha512-bBZRpt5vuaS3SYkyt3pF5N+VWTKrDlYeNnLKKwePcrGu77AKqZjofFR113tZi4aFF7rblvk8WqFdBWTNX+yZcg==
 
+vue3-progress@^0.0.1-beta4:
+  version "0.0.1-beta4"
+  resolved "https://registry.yarnpkg.com/vue3-progress/-/vue3-progress-0.0.1-beta4.tgz#eff5aeb235288b875806412c34ee2412f73dcee4"
+  integrity sha512-AiRlyzRvX0FPFkG8fcrFJ6fPQWt/3PdGy062fbWZB3qjAcU3MHzJPU5BZ5HfrmMHHnhk0u46du/k+KflmDdN9Q==
+
 vue3-transitions@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/vue3-transitions/-/vue3-transitions-1.0.0.tgz#19825fe222f863f768012110d72f18a252b656b6"

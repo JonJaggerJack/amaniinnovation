@@ -21,7 +21,7 @@
         class="relative z-0 pt-3 md:pt-6 mx-auto pb-6 max-w-6xl md:flex md:justify-between md:items-center"
       >
         <div class="relative z-50 flex items-center justify-between">
-          <div>
+          <div class="relative w-full flex justify-start">
             <router-link
               class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700"
               @click="$store.state.toggleMenu ? toggleMenu() : null"
@@ -51,6 +51,17 @@
                 />
               </div>
             </router-link>
+            <div
+              :class="[
+                scrollPosition > 100
+                  ? 'sm:top-[0px] -top-[3px]'
+                  : '-top-[3px] sm:top-[0px]',
+                'duration-100',
+              ]"
+              class="absolute z-[99999999] right-[50px] sm:-right-[120px] -p"
+            >
+              <vue3-progress />
+            </div>
           </div>
 
           <!-- Mobile menu button -->
