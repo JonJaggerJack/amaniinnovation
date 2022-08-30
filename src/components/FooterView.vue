@@ -22,7 +22,7 @@
           <div class="hidden">
             <span class="text-md">Nos réseau sociaux </span>
           </div>
-          <ul class="flex justify-start mt-0 gap-6 md:gap-8">
+          <ul class="flex justify-start mt-0 space-x-5 sm:space-x-6">
             <li class="transform hover:scale-125">
               <a
                 href="#_"
@@ -105,8 +105,11 @@
                   rel="noopener noreferrer"
                   >Sighted Design</a
                 ></span
-              ></span
-            >
+              >. <span>Code by</span>
+              <span class="font-bold underline text-cgreen ml-1">
+                <a href="#_" rel="noopener noreferrer">Akiliss.XYZ</a>
+              </span>
+            </span>
           </p>
         </div>
       </div>
