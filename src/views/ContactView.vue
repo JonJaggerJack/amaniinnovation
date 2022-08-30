@@ -2,7 +2,7 @@
   <div id="contact" class="contat">
     <section class="bg-cblack py-20 overflow-hidden sm:py-24 text-white relative">
       <div
-        class="z-10 absolute top-0 right-0 sm:left-24 bottom-[350px] sm:bottom-0 w-full h-full bg-gradient-to-t sm:bg-gradient-to-r from-cblack via-[#fff0] top-via-[#fff0]"
+        class="z-10 absolute top-0 right-0 sm:left-24 bottom-[350px] sm:bottom-0 w-full h-full bg-gradient-to-t sm:bg-gradient-to-r from-cblack via-transparent to-transparent"
       ></div>
       <div class="max-w-6xl mx-auto px-4 xl:px-0 relative">
         <div
@@ -20,7 +20,7 @@
             <h1 class="text-left text-3xl sm:text-5xl">
               Entrez en contact
               <span
-                class="leading-snug text-transparent bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
+                class="text-transparent bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
                 >avec nous</span
               >
             </h1>
