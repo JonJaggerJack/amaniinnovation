@@ -32,7 +32,9 @@
                   src="../assets/logo_w.png"
                   alt="Amani Innovation"
                   :class="[
-                    scrollPosition > 100 ? 'w-[100px]' : 'w-[100px] md:w-[130px]',
+                    scrollPosition > 100
+                      ? 'w-[100px] smal-logo'
+                      : 'big-logo w-[100px] md:w-[130px]',
                     'duration-100',
                   ]"
                 />
@@ -43,7 +45,7 @@
                   src="../assets/logo.png"
                   alt="Amani Innovation"
                   :class="[
-                    scrollPosition > 100 ? 'w-[100px]' : 'w-[130px]',
+                    scrollPosition > 100 ? 'w-[100px] smal-logo' : 'big-logo w-[130px]',
                     'duration-100',
                   ]"
                 />

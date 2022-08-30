@@ -6,6 +6,7 @@ export default createStore({
 		//stateInstances
 		fixedMenu: false,
 		toggleMenu: true,
+		menuDark: ref(true),
 		scrollPosition: ref(0),
 		windowsW: ref(null)
 	},

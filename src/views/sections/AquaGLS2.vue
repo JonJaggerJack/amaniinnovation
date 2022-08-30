@@ -82,9 +82,24 @@
                 <div class="mt-6 md:mt-8">
                   <router-link
                     to="/contact"
-                    class="inline-block px-6 py-2 text-sm font-bold text-blue-500 transition bg-cblack border-4 border-cblack rounded hover:bg-transparent hover:text-cblack focus:outline-none focus:ring focus:ring-cyellow"
+                    class="max-w-[250px] mx-auto flex justify-center items-center px-6 py-2 text-sm font-bold text-blue-500 transition bg-cblack border-4 border-cblack rounded hover:bg-transparent hover:text-cblack focus:outline-none focus:ring focus:ring-cyellow"
                   >
-                    Nous contacter
+                    <span class="_linksp"> Nous contacter </span>
+
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-4 h-4 ml-2 opacity-50 group-hover:opacity-95"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
+                      />
+                    </svg>
                   </router-link>
                 </div>
               </div>

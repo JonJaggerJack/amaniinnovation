@@ -130,7 +130,7 @@
                 <div class="mt-6 md:mt-8">
                   <router-link
                     to="/contact"
-                    class="max-w-[200px] mx-auto flex justify-center items-center px-6 py-2 text-sm font-bold text-blue-500 transition bg-cblack border-4 border-cblack rounded hover:bg-transparent hover:text-cblack focus:outline-none focus:ring focus:ring-cyellow"
+                    class="max-w-[250px] mx-auto flex justify-center items-center px-6 py-2 text-sm font-bold text-blue-500 transition bg-cblack border-4 border-cblack rounded hover:bg-transparent hover:text-cblack focus:outline-none focus:ring focus:ring-cyellow"
                   >
                 <span class="_linksp"> Nous contacter </span>
 

@@ -15,15 +15,28 @@
 body,
 html {
 	@apply font-reg text-cblack;
+	font-size-adjust: inherit;
 }
-/* 
+
 @media only screen and (min-width: 1550px) {
-	body {
-		-moz-transform: scale(1.1, 1.1);
-		zoom: 1.1;
-		zoom: 120%;
+	body,
+	html {
+		font-size: 117% !important;
 	}
-} */
+	mark {
+		font-size: 130% !important;
+	}
+	.big-logo {
+		width: 140px !important;
+	}
+	.smal-logo {
+		width: 130px !important;
+	}
+
+	.-f-smal-logo {
+		width: 110px !important;
+	}
+}
 
 * {
 	@apply transition-all duration-300 ease-in-out;
