@@ -4,13 +4,13 @@
       class="max-w-6xl mx-4 px-4 sm:px-0 sm:mx-auto py-16 sm:py-24 bg-cgray-100 bg-opacity-70 rounded-xl"
     >
       <h1
-        class="mb-3 text-2xl sm:text-3xl font-extrabold leading-tight text-center text-gray-900"
+        class="mb-4 text-2xl sm:text-3xl font-extrabold leading-tight text-center text-gray-900"
       >
         Ils nous ont fait confiance
       </h1>
       <p class="text-base text-cgray-700 text-center text-gray-600 max-w-xl mx-auto">
-        Nous avons été approuvés et utilisés par certaines des meilleures entreprises du
-        secteur.
+        Nous avons servis et avons été approuvés par certaines des meilleures entreprises
+        de differents secteurs.
       </p>
       <div class="flex justify-center items-center w-full">
         <div class="grid grid-cols-2 gap-16 py-16 mb-0 text-center lg:grid-cols-4">
