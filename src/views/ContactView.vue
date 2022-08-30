@@ -17,19 +17,20 @@
             >
               <span class="text-left"> Infos de Contact </span>
             </p>
-            <h1 class="text-left text-3xl sm:text-5xl">
+            <h1 class="text-left text-3xl sm:text-5xl sm:leading-tight">
               Entrez en contact
+              <br class="sm:hidden block" />
               <span
                 class="text-transparent bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
                 >avec nous</span
               >
             </h1>
-            <p class="mt-8 text-cgray-100 text-lg">
+            <p class="mt-12 text-cgray-300 text-lg">
               Que vous soyez une personne morale ou une entreprise, et que vous ayez des
               préocupations sur nos produit et services.
             </p>
 
-            <p class="mt-8 text-cgray-300 text-base">
+            <p class="mt-8 text-cgray-400 text-base">
               Choisissez un moyen de communication qui vous convient le mieux et soyez
               rassuré d'une reponse rapide de notre part
             </p>
