@@ -12,14 +12,14 @@
         <h3
           class="relative w-full px-0 sm:pb-2 m-0 text-3xl sm:text-4xl font-extrabold text-left xl:flex-grow-0 xl:flex-shrink-0 md:flex-grow-0 md:flex-shrink-0 lg:flex-grow-0 lg:flex-shrink-0"
         >
-          Une eau à hautes qualités
+          Une eau à <mark class="mark1">hautes qualités</mark>
         </h3>
       </div>
       <div class="grid grid-cols-3 gap-5 md:grid-cols-6">
         <div class="relative w-full col-span-3 px-0 leading-6 text-left">
           <div class="box-border flex items-center justify-start pt-12 relative">
             <div
-              class="absolute h-full w-1 bg-cgray-400 bg-opacity-30 top-1/2 mt-4 left-[22px] sm:left-[25px] -z-0"
+              class="absolute h-full w-1 bg-cgray-400 bg-opacity-30 top-1/2 mt-4 left-[22px] sm:left-[25px] -cl -z-0"
             ></div>
             <img
               src="https://cdn.devdojo.com/tails/icons/tips.png"
@@ -39,7 +39,7 @@
         <div class="relative w-full col-span-3 px-0 leading-6 text-left">
           <div class="box-border flex items-center justify-start pt-4 sm:pt-12 relative">
             <div
-              class="absolute h-full w-1 bg-cgray-400 bg-opacity-30 top-1/2 mt-4 left-[22px] sm:left-[25px] -z-0"
+              class="absolute h-full w-1 bg-cgray-400 bg-opacity-30 top-1/2 mt-4 left-[22px] sm:left-[25px] -cl -z-0"
             ></div>
 
             <img
@@ -58,7 +58,7 @@
         <div class="relative w-full col-span-3 px-0 leading-6 text-left">
           <div class="box-border flex items-center justify-start pt-4 relative">
             <div
-              class="block sm:hidden absolute h-full w-1 bg-cgray-400 bg-opacity-30 top-1/2 mt-4 left-[22px] sm:left-[25px] -z-0"
+              class="block sm:hidden absolute h-full w-1 bg-cgray-400 bg-opacity-30 top-1/2 mt-4 left-[22px] sm:left-[25px] -cl -z-0"
             ></div>
             <img
               src="https://cdn.devdojo.com/tails/icons/tips.png"

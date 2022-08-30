@@ -118,7 +118,7 @@
               <img
                 alt="#"
                 src="/assets/img/content/6.jpg"
-                class="hidden sm:block object-cover w-full h-40 rounded-xl sm:h-56 md:h-full"
+                class="hidden md:block object-cover w-full h-40 rounded-xl sm:h-56 md:h-full"
               />
             </div>
           </div>

@@ -103,16 +103,18 @@
         </div>
 
         <div class="mt-8">
-          <button class="transform hover:scale-[0.97]">
+          <button class="group transform hover:scale-[0.97]">
             <router-link
               :to="{ hash: '#logistics' }"
-              class="flex items-center text-base font-bold"
+              class="text-cgray-200 flex items-center text-base font-bold"
             >
-              <span class="border-b-2 border-black">Plus d'info</span>
+              <span class="border-b-4 border-cgray-700 group-hover:border-cyellow"
+                >Plus d'info</span
+              >
               <svg
                 viewBox="0 0 20 20"
                 fill="currentColor"
-                class="h-6 ml-3 mt-1.5 transform rotate-45 opacity-50"
+                class="h-6 ml-3 mt-1.5 transform rotate-45 opacity-50 group-hover:opacity-80"
               >
                 <path
                   fill-rule="evenodd"

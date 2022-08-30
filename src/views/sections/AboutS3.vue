@@ -58,20 +58,28 @@
         </div>
       </div>
       <div class="flex items-center justify-center w-full ml-2">
-        <a href="#" class="flex items-center text-base font-bold">
-          <span class="border-b-2 border-black">Devenez notre partenaire</span>
-          <svg
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            class="h-6 ml-3 mt-2 transform -rotate-45 opacity-50"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </a>
+        <button class="group transform hover:scale-[0.97]">
+          <router-link :to="{ hash: '#_' }" class="flex items-center text-base font-bold">
+            <span class="border-b-4 border-cgray-700 group-hover:border-cyellow"
+              >Devenez notre partenaire</span
+            >
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-6 ml-3 mt-1.5 transform -rotate-[20deg] group-hover:rotate-[45deg] opacity-50 group-hover:opacity-80"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+              />
+            </svg>
+          </router-link>
+        </button>
       </div>
     </div>
   </section>

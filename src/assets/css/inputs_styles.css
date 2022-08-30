@@ -36,6 +36,14 @@ html {
 	.-f-smal-logo {
 		width: 110px !important;
 	}
+
+	.-cl {
+		left: 30px !important;
+	}
+
+	.-h {
+		height: 80px !important;
+	}
 }
 
 * {

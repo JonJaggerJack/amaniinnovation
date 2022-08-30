@@ -29,21 +29,22 @@
               Que vous soyez une personne morale ou une entreprise, et que vous ayez des
               préocupations sur nos produit et services.
             </p>
-
-            <p class="mt-8 text-cgray-400 text-base">
-              Choisissez un moyen de communication qui vous convient le mieux et soyez
-              rassuré d'une reponse rapide de notre part
-            </p>
           </div>
         </div>
       </div>
     </section>
+    <ContactS1 />
   </div>
 </template>
 
 <script>
+import ContactS1 from "./sections/ContactS1.vue";
+
 export default {
   name: "ContactView",
+  components: {
+    ContactS1,
+  },
   setup() {},
 };
 </script>

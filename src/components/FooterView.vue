@@ -1,114 +1,79 @@
 <template>
   <div id="footer" class="w-full">
-    <section class="asFooter">
-      <div class="max-w-6xl mx-auto px-4 xl:px-0 sm:py-16 py-16 text-cgray-600">
-        <div class="grid md:grid-cols-4 w-full">
-          <div class="col-span-2 sm:flex sm:justify-between">
-            <div class="col-span-1">
-              <router-link to="/"
-                ><img
-                  src="../assets/logo.png"
-                  alt="IRAGI SOLUTIONS"
-                  class="-mt-4 -f-smal-logo w-[90px] sm:w-[100px] hidden sm:block saturate-50 opacity-50"
-              /></router-link>
-            </div>
-            <div class="col-span-1 sm:mt-0 mt-0">
-              <h3 class="font-bold text-cgray-900">
-                Nos réseaux sociaux <br />
-                <p class="h-1 w-6 mt-2 bg-cyellow"></p>
-              </h3>
-              <ul class="flex justify-left mt-6 space-x-8">
-                <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer"
-                    ><img
-                      src="/assets/img/logo/insta.svg"
-                      alt=""
-                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
-                  /></a>
-                </li>
-                <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer"
-                    ><img
-                      src="/assets/img/logo/tw.svg"
-                      alt=""
-                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
-                  /></a>
-                </li>
-                <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer"
-                    ><img
-                      src="/assets/img/logo/fb.svg"
-                      alt=""
-                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
-                  /></a>
-                </li>
-                <li>
-                  <a href="http://" target="_blank" rel="noopener noreferrer"
-                    ><img
-                      src="/assets/img/logo/in.svg"
-                      alt=""
-                      class="w-[20px] sm:w-[20px] opacity-70 hover:opacity-90"
-                  /></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-span-2 md:flex lg:justify-between sm:ml-16">
-            <div class="d col-span-1 sm:ml-16 sm:mt-0 mt-8">
-              <div>
-                <h3 class="font-bold text-cgray-900">
-                  L'Entreprise <br />
-                  <p class="h-1 w-6 mt-2 bg-cyellow"></p>
-                </h3>
-                <ul class="mt-4 space-y-2.5">
-                  <li>
-                    <router-link to="/about" class="cnav--ul__li sm:whitespace-nowrap">
-                      <span class="_linksp"> A propos de nous</span>
-                    </router-link>
-                  </li>
+    <footer class="bg-gray-100">
+      <div class="flex justify-between max-w-6xl px-4 py-16 mx-auto xl:px-0">
+        <div>
+          <div class="flex justify-start items-center">
+            <router-link to="/"
+              ><img
+                src="/assets/img/logo/logo_b.png"
+                alt="IRAGI SOLUTIONS"
+                class="-mt-0 -f-smal-logo w-[90px] sm:w-[100px] sm:block saturate-50 opacity-90"
+            /></router-link>
 
-                  <li>
-                    <router-link to="/services/aquagl" class="cnav--ul__li">
-                      <span class="_linksp"> Aqua GL </span>
-                    </router-link>
-                  </li>
-                  <li>
-                    <router-link to="/services/logistics" class="" aria-current="page">
-                      <span class="_linksp"> Amani Logistics </span>
-                    </router-link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="d col-span-1 md:ml-16 lg:ml-16 sm:mt-0 mt-8 hidden sm:block">
-              <div>
-                <h3 class="font-bold text-cgray-900">
-                  Infos de contact <br />
-                  <p class="h-1 w-6 mt-2 bg-cyellow"></p>
-                </h3>
-                <ul class="mt-4 space-y-2">
-                  <li>
-                    <a href="mailto:email@amaniinovation.com" class="cnav--ul__li"
-                      >email@amaniinovation.com</a
-                    >
-                  </li>
-                  <li>
-                    <a href="tel:+243 xx xxxx xxx" class="cnav--ul__li"
-                      >+243 xx xxxx xxx</a
-                    >
-                  </li>
-                  <li><a href="" class="cnav--ul__li">Bukavu - RDC</a></li>
-                </ul>
-              </div>
-            </div>
+            <span
+              class="hidden sm:block text-xl text-cgray-700 font-bold ml-4 border-l-4 border-cgray-300 pl-4"
+            >
+              Au delà de vos limite
+            </span>
           </div>
         </div>
+        <div class="flex justify-start ml-4 sm:mt-0 sm:space-x-8 items-center">
+          <div class="hidden">
+            <span class="text-md">Nos réseau sociaux </span>
+          </div>
+          <ul class="flex justify-start mt-0 gap-6 md:gap-8">
+            <li class="transform hover:scale-125">
+              <a
+                href="#_"
+                rel="noopener noreferrer"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Facebook</span>
+                <img src=" /assets/img/logo/fb.svg" class="w-5 h-5" alt="" />
+              </a>
+            </li>
+
+            <li class="transform hover:scale-125">
+              <a
+                href="#_"
+                rel="noopener noreferrer"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Instagram</span>
+                <img src=" /assets/img/logo/insta.svg" class="w-5 h-5" alt="" />
+              </a>
+            </li>
+
+            <li class="transform hover:scale-125">
+              <a
+                href="#_"
+                rel="noopener noreferrer"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">Twitter</span>
+                <img src=" /assets/img/logo/tw.svg" class="w-5 h-5" alt="" />
+              </a>
+            </li>
+
+            <li class="transform hover:scale-125">
+              <a
+                href="#_"
+                rel="noopener noreferrer"
+                class="text-gray-700 transition hover:text-gray-700/75"
+              >
+                <span class="sr-only">LinkedIn</span>
+                <img src=" /assets/img/logo/in.svg" class="w-5 h-5" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </footer>
+
     <section class="bg-cgray-100 bg-opacity-70">
       <div class="relative max-w-6xl mx-auto px-4 xl:px-0 py-4">
-        <div class="absolute -top-4 right-4 sm:right-0">
+        <div class="absolute -top-4 right-4 xl:right-0">
           <button
             @click="backToTop()"
             class="text-cblack btn bg-cyellow p-1.5 sm:p-2 rounded-lg animate-bounce"
