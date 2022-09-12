@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	// command/ npx tailwindcss -i ./src/assets/css/inputs_styles.css -o ./public/css/outputs_styles.css --minify --watch
+	// command/ npx tailwindcss -i ./src/assets/css/inputs_styles.css -o ./public/assets/css/outputs_styles.css --minify --watch
 	content: ["./public/**/*.html", "./src/**/*.{js,jsx,ts,tsx,vue}"],
 	theme: {
 		extend: {
