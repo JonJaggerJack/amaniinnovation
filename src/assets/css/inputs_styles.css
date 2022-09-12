@@ -23,7 +23,7 @@ html {
 		font-size-adjust: inherit;
 	}
 	mark {
-		font-size: 130% !important;
+		font-size: 105% !important;
 	}
 	.big-logo {
 		width: 140px !important;
@@ -227,9 +227,6 @@ mark {
 	font-weight: inherit;
 	/* background-image: url(./bg/large-brush-heading.svg); */
 	color: inherit;
-	font-family: Neuton !important;
-	font-weight: 900;
-	font-size: 120%;
 }
 
 .mark1 {

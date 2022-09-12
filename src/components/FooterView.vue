@@ -105,10 +105,7 @@
                   rel="noopener noreferrer"
                   >Sighted Design</a
                 ></span
-              >. <span>Coded by</span>
-              <span class="font-bold underline text-cgreen ml-1">
-                <a href="#_" rel="noopener noreferrer">Akiliss.XYZ</a>
-              </span>
+              >
             </span>
           </p>
         </div>

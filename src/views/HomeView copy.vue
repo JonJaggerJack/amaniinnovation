@@ -1,7 +1,7 @@
 <template>
   <div class="home">
-    <section class="bg-cblack bg-[url('bg/1.png')] bg-cover bg-center relative">
-      <div class="absolute top-0 right-0 w-full h-full bg-cblack opacity-50"></div>
+    <section class="bg-cblack bg-[url('bg/2.jpg')] bg-cover bg-center relative">
+      <div class="absolute top-0 right-0 w-full h-full bg-cblack opacity-90"></div>
 
       <div
         class="max-w-6xl py-20 md:py-24 mx-auto text-left md:text-center px-4 xl:px-0 relative"
@@ -25,13 +25,13 @@
         </div>
         <div class="relative max-w-4xl">
           <h1
-            class="pb-2 leading-normal mt-[300px] md:mt-[400px] text-4xl font-black text-left text-transparent md:text-5xl md:text-left bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
+            class="pb-2 leading-normal mt-[300px] md:mt-[300px] text-4xl font-black text-left text-transparent md:text-5xl md:text-left bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
           >
             Au-delà de vos limites
           </h1>
 
           <p
-            class="mt-8 text-md text-left text-cgray-100 sm:text-base md:text-lg md:max-w-xl md:text-left"
+            class="mt-8 text-md text-left text-cgray-400 sm:text-base md:text-lg md:max-w-xl md:text-left"
           >
             Société née des initiatives pour l’émergence et la croissance dans le domaine
             de l’eau, énergie, transport, agroalimentaire en général et immobilier au sein
