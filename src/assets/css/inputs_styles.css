@@ -5,6 +5,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-black,
+.font-extrabold {
+	font-weight: 900 !important;
+}
+
 .router-link-exact-active ._linksp {
 	text-decoration: underline !important;
 }
