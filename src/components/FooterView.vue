@@ -1,7 +1,7 @@
 <template>
   <div id="footer" class="w-full">
     <footer class="bg-gray-100">
-      <div class="flex justify-between max-w-6xl px-4 py-16 mx-auto xl:px-0">
+      <div class="sm:flex sm:justify-between max-w-6xl px-4 py-16 mx-auto xl:px-0">
         <div>
           <div class="flex justify-start items-center">
             <router-link to="/"
@@ -12,13 +12,41 @@
             /></router-link>
 
             <span
+              class="sm:hidden block text-xl text-cgray-700 font-bold ml-4 border-l-4 border-cgray-300 pl-4"
+            >
+              <router-link to="/contact" class="flex items-center text-base font-bold">
+                <span
+                  class="border-b-2 border-cgray-700 border-opacity-30 group-hover:border-cyellow"
+                  >Nous contacter</span
+                >
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 ml-3 mt-1.5 transform -rotate-[20deg] group-hover:rotate-[45deg] opacity-50 group-hover:opacity-80"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+                  />
+                </svg>
+              </router-link>
+            </span>
+
+            <span
               class="hidden sm:block text-xl text-cgray-700 font-bold ml-4 border-l-4 border-cgray-300 pl-4"
             >
               Au delà de vos limite
             </span>
           </div>
         </div>
-        <div class="flex justify-start ml-4 sm:mt-0 space-x-3 sm:space-x-8 items-center">
+        <div
+          class="flex justify-start sm:ml-4 mt-8 sm:mt-0 space-x-0 sm:space-x-8 items-center"
+        >
           <div class="hidden">
             <span class="text-md">Nos réseau sociaux </span>
           </div>

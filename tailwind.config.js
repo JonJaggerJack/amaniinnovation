@@ -5,12 +5,12 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				reg: ["Inter, sans-serif"],
-				medium: ["Inter, sans-serif"],
-				semibold: ["Inter, sans-serif"],
-				bold: ["Inter, sans-serif"],
-				extrabold: ["Inter, sans-serif"],
-				black: ["Inter, sans-serif"]
+				reg: ["Roboto, sans-serif"],
+				medium: ["Roboto, sans-serif"],
+				semibold: ["Roboto, sans-serif"],
+				bold: ["Roboto, sans-serif"],
+				extrabold: ["Futura Md BT, sans-serif"],
+				black: ["Futura Md BT, sans-serif"]
 			}
 		},
 		colors: {

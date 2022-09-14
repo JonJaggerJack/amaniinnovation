@@ -23,7 +23,7 @@
         <div class="relative z-50 flex items-center justify-between">
           <div class="relative w-full flex justify-start">
             <router-link
-              class="text-xl font-bold text-gray-800 md:text-2xl hover:text-gray-700"
+              class="text-xl font-medium text-gray-800 md:text-2xl hover:text-gray-700"
               @click="$store.state.toggleMenu ? toggleMenu() : null"
               to="/"
             >

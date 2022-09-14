@@ -100,16 +100,16 @@
             <ul class="mt-6 space-y-4 text-md">
               <li class="group">
                 <a
-                  href="tel:+24397057507"
+                  href="tel:+243998001984"
                   class="border-b-4 border-cgray-700 group-hover:border-cyellow"
-                  >+243 97 057 507</a
+                  >+243998001984</a
                 >
               </li>
               <li class="group">
                 <a
-                  href="tel:+24397057507"
+                  href="tel:+243850911487"
                   class="border-b-4 border-cgray-700 group-hover:border-cyellow"
-                  >+243 xxx xxx xxx</a
+                  >+243850911487</a
                 >
               </li>
             </ul>
@@ -120,16 +120,9 @@
             <ul class="mt-6 space-y-4 text-md">
               <li class="group">
                 <a
-                  href="mailto:mail@ammaniinnov.com"
+                  href="mailto:infos@amaniinnov.com"
                   class="border-b-4 border-cgray-700 group-hover:border-cyellow"
-                  >mail@ammaniinnov.com</a
-                >
-              </li>
-              <li class="group">
-                <a
-                  href="mailto:direction@amaniinnov.com"
-                  class="border-b-4 border-cgray-700 group-hover:border-cyellow"
-                  >direction@amaniinnov.com</a
+                  >infos@amaniinnov.com</a
                 >
               </li>
             </ul>

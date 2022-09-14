@@ -5,7 +5,7 @@
       <h2 class="text-center text-3xl font-black sm:text-4xl sm:leading-tight">
         Nos produits et services
       </h2>
-      <div class="grid grid-cols-1 lg:grid-cols-2 md:gap-8 pt-16 sm:pt-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 sm:gap-8 pt-16 sm:pt-12">
         <div class="bg-cblack p-12 text-cwhite text-center rounded-xl">
           <div class="py-0 flex justify-center items-center w-full">
             <img src="/assets/img/content/2.png" alt="" />
