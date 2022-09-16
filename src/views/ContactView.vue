@@ -17,9 +17,9 @@
             >
               <span class="text-left"> Infos de Contact </span>
             </p>
-            <h1 class="text-left text-3xl sm:text-5xl sm:leading-tight">
+            <h1 class="text-left text-3xl sm:text-[50px] sm:leading-[3.5rem]">
               Entrez en contact
-              <br class="sm:hidden block" />
+              <br class="xl:hidde block" />
               <span
                 class="text-transparent bg-clip-text bg-gradient-to-r from-cyellow via-cwhite to-cyellow"
                 >avec nous</span

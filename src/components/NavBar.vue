@@ -151,7 +151,7 @@
                 ]"
                 href="#_"
               >
-                <span class="_link"> À propos de nous</span></router-link
+                <span class="_link text-md"> À propos de nous</span></router-link
               >
 
               <Popover v-slot="{ open }" class="py-3 z-50">
@@ -162,7 +162,7 @@
                   <span
                     :class="[
                       scrollPosition > 100 ? ' text-cblack' : 'text-cwhite',
-                      'hover:underline',
+                      'hover:underline text-md',
                       open ? 'text-cyellow underline' : '',
 
                       currentRoute == 'aquagl' || currentRoute == 'logistics'

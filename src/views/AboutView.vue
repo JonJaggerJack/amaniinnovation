@@ -24,7 +24,7 @@
             </span>
           </p>
           <h1
-            class="text-3xl w-full sm:text-left text-center sm:text-5xl font-black sm:leading-tight"
+            class="text-3xl w-full sm:text-left text-center sm:text-[50px] font-black sm:leading-tight"
           >
             <div class="justify-center items-center sm:items-start sm:justify-start">
               Amani Innovation <br class="sm:hidden" />

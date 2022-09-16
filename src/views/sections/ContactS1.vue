@@ -21,9 +21,10 @@
               />
             </svg>
           </div>
-          <h1 class="text-xl sm:text-3xl font-black sm:leading-tight text-left">
+          <h1 class="text-xl sm:text-2xl font-black sm:leading-tight text-left">
             <span class="hidden sm:block">
-              Choisissez un moyen de communication qui vous convient
+              Choisissez un moyen de communication <br class="hidden sm:block" />
+              qui vous convient
             </span>
             <span class="sm:hidden block">Choissisez un moyen de communication </span>
           </h1>

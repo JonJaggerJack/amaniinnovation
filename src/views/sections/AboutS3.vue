@@ -1,32 +1,19 @@
 <template>
   <section class="relative">
     <div
-      class="max-w-6xl mx-4 px-4 sm:px-0 sm:mx-auto py-16 sm:py-24 bg-cgray-100 bg-opacity-70 rounded-xl"
+      class="max-w-6xl mx-4 px-4 sm:px-0 sm:mx-auto sm:h-1 bg-cgray-100 bg-opacity-50 rounded-xl"
     >
-      <h1
+      <!-- <h1
         class="mb-4 text-2xl sm:text-3xl font-extrabold leading-tight text-center text-gray-900"
       >
-        Ils nous ont fait confiance
+        Une équipe à la hauteur
       </h1>
       <p class="text-base text-cgray-700 text-center text-gray-600 max-w-xl mx-auto">
-        Nous avons servis et avons été approuvés par certaines des meilleures entreprises
-        de differents secteurs.
-      </p>
-      <div class="flex justify-center items-center w-full">
+        Nous
+      </p> -->
+      <!-- <div class="flex justify-center items-center w-full">
         <div class="grid grid-cols-2 gap-16 py-16 mb-0 text-center lg:grid-cols-4">
-          <!--<a
-              href="https://www.sighteddesign.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            class="flex items-center justify-center bg-cblack rounded-lg px-6 py-2 space-x-4" 
-            <img alt="Sighted Logo" class="block object-contain h-8 lg:h-10" />
-            <span class="font-black text-lg text-white leading-6">
-                Sighted <br />
-                Design
-              </span></a>
-              
-              -->
+
           <div class="flex items-center justify-center">
             <img
               src="https://www.sighteddesign.com/images/2021/03/26/congo.png"
@@ -56,8 +43,8 @@
             />
           </div>
         </div>
-      </div>
-      <div class="flex items-center justify-center w-full ml-2">
+      </div> -->
+      <!-- <div class="flex items-center justify-center w-full ml-2">
         <button class="group transform hover:scale-[0.97]">
           <router-link :to="{ hash: '#_' }" class="flex items-center text-base font-bold">
             <span class="border-b-4 border-cgray-700 group-hover:border-cyellow"
@@ -80,7 +67,7 @@
             </svg>
           </router-link>
         </button>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
