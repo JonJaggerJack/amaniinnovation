@@ -9,8 +9,8 @@ module.exports = {
 				medium: ["Roboto, sans-serif"],
 				semibold: ["Roboto, sans-serif"],
 				bold: ["Roboto, sans-serif"],
-				extrabold: ["Futura Std Bold"],
-				black: ["Futura Std Bold"]
+				extrabold: ["Futura Std Bold, sans-serif"],
+				black: ["Futura Std Bold, sans-serif"]
 			}
 		},
 		colors: {
