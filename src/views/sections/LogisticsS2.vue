@@ -1,7 +1,7 @@
 <template>
   <section class="w-full px-4 py-16 bg-cblack text-white xl:px-0">
     <div class="max-w-2xl mx-auto tracking-tighter">
-      <h2 class="text-2xl sm:text-3xl font-extrabold sm:leading-[2.5rem]">
+      <h2 class="text-2xl md:text-[35px] font-extrabold sm:leading-[2.5rem]">
         De Dar-es-Salam vers toute la région de la communauté des
         <mark class="mark2">Etats de l’Afrique de l’Est</mark>.
       </h2>

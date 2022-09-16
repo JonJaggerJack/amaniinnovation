@@ -2,7 +2,7 @@
   <!-- Section 1 -->
   <section id="logistics" class="w-full px-4 py-16 bg-white xl:px-0">
     <div class="max-w-2xl mx-auto tracking-tighter">
-      <h2 class="text-2xl font-extrabold sm:leading-[2.5rem] text-black md:text-4xl">
+      <h2 class="text-2xl font-extrabold sm:leading-[2.5rem] text-black md:text-[35px]">
         Une importante <mark class="mark1">ﬂotte de véhicules</mark> sur les routes
         congolaises et africaines
       </h2>
