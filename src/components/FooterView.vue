@@ -53,8 +53,9 @@
           <ul class="flex justify-start mt-0 space-x-5 sm:space-x-6">
             <li class="transform hover:scale-125">
               <a
-                href="#_"
+                target="_blank"
                 rel="noopener noreferrer"
+                href="https://www.facebook.com/amaniinnov22"
                 class="text-gray-700 transition hover:text-gray-700/75"
               >
                 <span class="sr-only">Facebook</span>
@@ -65,6 +66,7 @@
             <li class="transform hover:scale-125">
               <a
                 href="#_"
+                target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-700 transition hover:text-gray-700/75"
               >
@@ -76,6 +78,7 @@
             <li class="transform hover:scale-125">
               <a
                 href="#_"
+                target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-700 transition hover:text-gray-700/75"
               >
@@ -87,6 +90,7 @@
             <li class="transform hover:scale-125">
               <a
                 href="#_"
+                target="_blank"
                 rel="noopener noreferrer"
                 class="text-gray-700 transition hover:text-gray-700/75"
               >
