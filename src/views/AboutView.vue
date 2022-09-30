@@ -45,7 +45,7 @@
             class="transform hover:scale-[0.95] flex w-full sm:w-auto justify-start"
           >
             <router-link
-              to="/about"
+              :to="{ hash: '#about' }"
               class="sm:ring-4 flexc ring-transparent hover:ring-cgreen border-cyellow group font-bold text-base flex w-full sm:w-auto justify-start items-center px-6 py-3 mt-8 text-cyellow bg-cgreen bg-opacity-10 rounded-md"
             >
               <svg
@@ -61,10 +61,10 @@
                 ></path>
               </svg>
 
-              <span class="font-bold group-hover:underline">Decouvrez-nous </span>
+              <span class="font-bold group-hover:underline">En savoir plus </span>
               <span class="smalls">
                 <span class="mx-2">-</span>
-                <span class="font-light"> en vidéo</span></span
+                <span class="font-light"> sur nous</span></span
               >
             </router-link>
           </button>
@@ -82,6 +82,7 @@
         </div>
       </div>
     </section>
+
     <AboutS1 />
     <AboutS2 />
     <AboutS3 />

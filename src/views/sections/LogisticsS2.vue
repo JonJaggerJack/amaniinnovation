@@ -124,7 +124,7 @@
                 </h2>
 
                 <p class="mt-6 text-cgray-800 text-base">
-                  Notre équipe d'accueil sera très enchanté de vous recevoir
+                  Notre équipe d'accueil sera très enchantée de vous recevoir
                 </p>
 
                 <div class="mt-6 md:mt-8">

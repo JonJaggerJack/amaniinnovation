@@ -47,9 +47,11 @@
               class="leading-6 text-left align-middle border-none w-12 h-12 sm:w-14 sm:h-14 z-10"
             />
             <div class="pl-4 sm:pl-8 leading-6 text-left">
-              <div class="box-border pb-1 text-lg font-bold mb-2">Eau de source pure</div>
+              <div class="box-border pb-1 text-lg font-bold mb-2">
+                Contrôlée rigoureusement
+              </div>
               <div class="box-border text-md leading-normal text-cgray-700">
-                Qui se diffuse rapidement et efficacement dans l’organisme
+                tant sur le plan physicochimique que bactériologique
               </div>
             </div>
           </div>
@@ -81,10 +83,18 @@
             />
             <div class="pl-4 sm:pl-8 leading-6 text-left">
               <div class="box-border pb-1 text-lg font-bold mb-2">
-                Idéal et sans risque
+                Par des services compétents
               </div>
               <div class="box-border text-md leading-normal text-cgray-700">
-                Recommandée pour les utilisations domestiques
+                dont la
+                <a
+                  href="https://www.pharmakina.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="underline"
+                  >Pharmakina</a
+                >
+                et sa limpidité est obtenue après filtration
               </div>
             </div>
           </div>

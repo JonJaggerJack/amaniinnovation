@@ -26,38 +26,34 @@
         <p
           class="text-cgray-800 pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 text-md lg:text-lg"
         >
-          Est d’œuvrer dans des secteurs à impact rapide et intégrateurs, pouvant
-          améliorer :
+          Œuvrer dans des secteurs à impact rapide et intégrateurs, pouvant améliorer :
         </p>
         <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700"> L’écosystème entrepreneurial </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700"> L’écosystème entrepreneurial </span>
+            </div>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700"> Et l’environnement socioéconomique </span>
-          </li>
-          <li
-            class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
-          >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700">
-              En particulier au sein de la ville de Bukavu
-            </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700">L’environnement socio-économique </span>
+            </div>
           </li>
         </ul>
       </div>
@@ -76,39 +72,51 @@
         <p
           class="text-cgray-800 pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-10 lg:text-lg"
         >
-          En vue d'œuvrer par package de produit en débutant par la transformation
-          industrielle au travers la production et l’offre de l’eau de source au sein de
-          la ville de Bukavu. Amani Innovation se consolide par :
+          Amani Innovation se consolide par une relation basée sur :
         </p>
         <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700"> Une relation basée sur la confiance </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700">La confiance et la solidarité</span>
+            </div>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700"> La solidarité entre les actionnaire </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700"
+                >La culture de l’excellence, l’éthique et la réussite partagée</span
+              >
+            </div>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700">
-              La fibre sociale du lien familial qui les unit
-            </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700">
+                Nous agissons socialement de façon responsable.
+              </span>
+            </div>
           </li>
         </ul>
       </div>
@@ -145,45 +153,58 @@
         <h2
           class="m-0 text-2xl font-extrabold leading-tight border-0 border-cgray-300 md:text-2xl"
         >
-          Notre Objectif
+          Nos Objectifs
         </h2>
         <p
           class="text-cgray-800 pt-4 pb-8 m-0 leading-7 text-gray-700 border-0 border-gray-300 sm:pr-12 xl:pr-32 lg:text-lg"
         >
-          Nous voulons créer des activités dans different secteurs, dont les plus envisagé
-          :
+          Amani Innovation Sarl a pour objectifs
         </p>
         <ul class="p-0 m-0 leading-6 border-0 border-gray-300">
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700"> Transformation industrielle et courtage </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700"
+                >Création d’emploi et facilitation des marchés
+              </span>
+            </div>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700">
-              Assurances et de transport et communication
-            </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700">
+                Rendre effectif la promotion des jeunes entrepreneurs
+              </span>
+            </div>
           </li>
           <li
             class="flex justify-start items-center box-border relative py-1 pl-0 text-left text-gray-500 border-solid"
           >
-            <span
-              class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
-              ><span class="text-sm font-bold">✓</span></span
-            >
-            <span class="text-cgray-700">
-              Commerce général, import-export, logistique
-            </span>
+            <div>
+              <span
+                class="inline-flex items-center justify-center w-6 h-6 mr-3 text-cblack bg-cyellow rounded-full"
+                ><span class="text-sm font-bold">✓</span></span
+              >
+            </div>
+            <div>
+              <span class="text-cgray-700">
+                Booster le système entrepreneurial ainsi que le climat des affaires
+              </span>
+            </div>
           </li>
         </ul>
       </div>

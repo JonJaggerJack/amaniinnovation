@@ -78,7 +78,7 @@
             <li>
               <router-link
                 class="block transition-colors hover:text-cgray-200"
-                to="/services/aquagl"
+                to="/services/logistics"
               >
                 <span class="_link">Amani Logistics</span>
               </router-link>
@@ -135,7 +135,7 @@
         class="relative w-full h-auto max-w-2xl px-4 mx-auto md:max-w-4xl lg:max-w-4xl lg:px-5"
       >
         <img
-          src="/assets/img/content/4.png"
+          src="/assets/img/content/4_3.png"
           class="bg-cgray-100 bg-opacity-5 rounded-tl-xl rounded-tr-xl py-4 sm:py-8 px-1 sm:px-2 relative w-full transform lg:absolute lg:-mt-64"
         />
       </div>

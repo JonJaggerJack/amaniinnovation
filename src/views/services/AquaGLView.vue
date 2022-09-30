@@ -101,12 +101,12 @@
         </h2>
         <div class="pt-8">
           <p class="block text-cgray-200 text-md text-gray-300 sm:text-lg">
-            Le terme vient du mot latin aqua (eau) et G(Gérard),L(Levine) ce qui veut dire
-            « Eau Gérard et Levine »
+            Aqua GL est une eau naturellement pure, jaillissant des collines de MULUME
+            MUNENE, provenant dans un environnement sain.
           </p>
           <p class="mt-8 text-cgray-500">
-            Nom choisi par le président délégué général de société en hommage de ses feus
-            parents biologiques pour leurs sacriﬁces tant consentis pour la famille
+            C’est une eau douce et purifiée, issue des nappes phréatiques souterraines de
+            qualité supérieure.
           </p>
         </div>
 
