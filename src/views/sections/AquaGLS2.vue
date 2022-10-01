@@ -13,19 +13,31 @@
         as="div"
         v-slot="{ open }"
         :key="question"
-        v-for="question in questions"
+        v-for="(question, index) in questions"
       >
         <DisclosureButton
-          class="relative pr-12 flex w-full justify-between rounded-lg bg-cgray-100 bg-opacity-5 hover:bg-opacity-10 px-6 py-4 text-left text-sm font-medium text-purple-900 hover:bg-cgra-100 focus:outline-none focus-visible:ring focus-visible:ring-cgreen focus-visible:ring-opacity-5"
+          class="relative pr-12 flex w-full justify-start items-center rounded-lg bg-cgray-100 bg-opacity-5 hover:bg-opacity-10 px-6 py-4 text-left text-sm font-medium text-purple-900 hover:bg-cgra-100 focus:outline-none focus-visible:ring focus-visible:ring-cgreen focus-visible:ring-opacity-5"
         >
-          <span class="text-lg font-bold"> {{ question.q }} </span>
-          <ChevronUpIcon
+          <div class="mr-4">
+            <span
+              :class="[
+                open ? 'rotate-180 transform  ' : '',
+                'text-2xl sm:text-3xl font-bold text-cgray-500',
+              ]"
+            >
+              {{ index + 1 }}
+            </span>
+          </div>
+          <div>
+            <span class="text-lg font-bold text-left"> {{ question.q }} </span>
+          </div>
+          <!-- <ChevronUpIcon
             :class="open ? 'rotate-180 transform text-cyellow ' : 'text-cgray-500'"
             class="h-5 w-5 absolute right-4 top-5 sm:top-4 sm:right-6"
-          />
+          /> -->
         </DisclosureButton>
 
-        <TransitionRoot
+        <!-- <TransitionRoot
           enter="transition-all duration-500 h-0 overflow-y-hidden"
           enter-from="opacity-0 h-0 overflow-y-hidden"
           enter-to="opacity-100 h-[200px] sm:h-[100px] overflow-y-hidden"
@@ -42,7 +54,7 @@
 
             {{ question.r }}
           </DisclosurePanel>
-        </TransitionRoot>
+        </TransitionRoot> -->
       </DisclosureD>
     </div>
 
@@ -131,11 +143,11 @@
 <script>
 import { ref } from "vue";
 
-import { ChevronUpIcon } from "@heroicons/vue/solid";
+// import { ChevronUpIcon } from "@heroicons/vue/solid";
 export default {
   name: "AquaGLS2",
   components: {
-    ChevronUpIcon,
+    // ChevronUpIcon,
   },
 
   setup() {
