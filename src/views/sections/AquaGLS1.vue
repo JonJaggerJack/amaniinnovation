@@ -1,5 +1,5 @@
 <template>
-  <!-- Section 1 -->
+  <!-- Section  1 -->
   <section
     id="aquagl"
     class="box-border relative block py-16 overflow-hidden leading-6 text-left bg-white"
